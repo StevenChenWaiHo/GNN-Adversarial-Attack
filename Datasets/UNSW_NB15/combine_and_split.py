@@ -27,7 +27,7 @@ df_full.loc[df_full[UNSW_NB15_Config.IS_ATTACK_COL_NAME] == 0, UNSW_NB15_Config.
 # Fill NaNs (optional: set to 0 or use imputation)
 df_full.fillna(0, inplace=True)
 
-df_full = df_full.sort_values(by=UNSW_NB15_Config.TIME_COLS_NAME)
+df_full = df_full.sort_values(by=UNSW_NB15_Config.TIME_COL_NAMES)
 
 df_full.to_csv(output_all_raw_path, index=False, header=True)
 
@@ -71,8 +71,8 @@ scaler = StandardScaler()
 cols_to_norm = UNSW_NB15_Config.COLS_TO_NORM
 print(train_df[cols_to_norm].describe()) # Check if there's any too large value
 
-train_df = train_df.sort_values(by=UNSW_NB15_Config.TIME_COLS_NAME)
-test_df = test_df.sort_values(by=UNSW_NB15_Config.TIME_COLS_NAME)
+train_df = train_df.sort_values(by=UNSW_NB15_Config.TIME_COL_NAMES)
+test_df = test_df.sort_values(by=UNSW_NB15_Config.TIME_COL_NAMES)
 
 train_df[cols_to_norm] = scaler.fit_transform(train_df[cols_to_norm])
 test_df[cols_to_norm] = scaler.transform(test_df[cols_to_norm])

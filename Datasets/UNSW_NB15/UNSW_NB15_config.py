@@ -12,7 +12,7 @@ class UNSW_NB15_Config:
 
     BENIGN_CLASS_NAME = "Normal"
 
-    TIME_COLS_NAME = ["Stime", "Ltime"]
+    TIME_COL_NAMES = ["Stime", "Ltime"]
 
     COL_NAMES = [
         "srcip",
