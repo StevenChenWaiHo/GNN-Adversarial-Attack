@@ -46,35 +46,5 @@ def preprocess(dataframe):
     dataframe.drop(columns=['index'],inplace=True)
 
     print(dataframe.head)
-
-    scaler = StandardScaler()
-    cols_to_norm = UNSW_NB15_Config.COLS_TO_NORM
-    print(dataframe[cols_to_norm].describe()) # Check if there's any too large value
-
-    def check_numeric_issues(df, cols_to_norm):
-        for col in cols_to_norm:
-            try:
-                # Try to coerce to numeric
-                df[col] = pd.to_numeric(df[col], errors='coerce')
-                
-                # Try to clip the column
-                df[col] = df[col].clip(lower=-1e9, upper=1e9)
-                
-            except Exception as e:
-                print(f"❌ Column '{col}' failed with error: {e}")
-                print(f"  - Sample values: {df[col].dropna().unique()[:5]}")
-                print(f"  - Data type: {df[col].dtype}")
-                continue
-
-        print("\n✅ All other columns processed successfully.")
-
-    check_numeric_issues(dataframe, UNSW_NB15_Config.COLS_TO_NORM)
-
-    # Convert categorical columns to one-hot encoding
-    dataframe = pd.get_dummies(dataframe, columns=UNSW_NB15_Config.CATEGORICAL_COLS, drop_first=True)
-
-    dataframe[cols_to_norm] = scaler.fit_transform(dataframe[cols_to_norm])
-
-    # Save the scaler to a file
-    joblib.dump(scaler, 'scaler.pkl')
+    
     return dataframe

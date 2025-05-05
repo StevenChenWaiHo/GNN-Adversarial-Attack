@@ -12,6 +12,8 @@ class UNSW_NB15_Config:
 
     BENIGN_CLASS_NAME = "Normal"
 
+    TIME_COLS_NAME = ["Stime", "Ltime"]
+
     COL_NAMES = [
         "srcip",
         "sport",
@@ -123,3 +125,5 @@ class UNSW_NB15_Config:
     CATEGORICAL_COLS = [
         "state", # Indicates to the state and its dependent protocol, e.g. ACC, CLO, CON, ECO, ECR, FIN, INT, MAS, PAR, REQ, RST, TST, TXD, URH, URN, and (-) (if not used state)
     ]
+
+    assert (set(COLS_TO_NORM) | set(CATEGORICAL_COLS)).issubset(set(COL_NAMES) - set(DROP_COLS)), f"Some columns are not in the right place. Please check the column names in {DATASET_NAME}_config.py ."
