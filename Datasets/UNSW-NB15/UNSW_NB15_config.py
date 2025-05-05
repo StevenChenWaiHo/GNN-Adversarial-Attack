@@ -66,7 +66,7 @@ class UNSW_NB15_Config:
 
     # DROP_COLS = ['subcategory','pkSeqID','stime','flgs','state','proto','seq']
 
-    DROP_COLS = []
+    DROP_COLS = ["proto", "service"]
 
     COLS_TO_NORM = [
         # "srcip",
@@ -121,7 +121,5 @@ class UNSW_NB15_Config:
     ]
 
     CATEGORICAL_COLS = [
-        "proto", # Transaction protocol
         "state", # Indicates to the state and its dependent protocol, e.g. ACC, CLO, CON, ECO, ECR, FIN, INT, MAS, PAR, REQ, RST, TST, TXD, URH, URN, and (-) (if not used state)
-        "service", # http, ftp, smtp, ssh, dns, ftp-data ,irc  and (-) if not much used service
     ]
