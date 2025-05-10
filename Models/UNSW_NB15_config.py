@@ -17,8 +17,13 @@ class UNSW_NB15_Config:
     SOURCE_NODE = "srcip"
     DESTINATION_NODE = "dstip"
 
+    SOURCE_PORT_COL_NAME = "sport"
+    DESTINATION_PORT_COL_NAME = "dsport"
+
     ATTACK_CLASS_COL_NAME = "attack_cat"
     IS_ATTACK_COL_NAME = "label"
 
     BENIGN_CLASS_NAME = "Normal"
+
+    TIME_COL_NAMES = ["Stime", "Ltime"]
 

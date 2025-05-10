@@ -12,7 +12,7 @@ def downsample_csv(input_file, output_file):
     downsampled_df = pd.concat([downsampled_normal_df, df[df[UNSW_NB15_Config.ATTACK_CLASS_COL_NAME] != UNSW_NB15_Config.BENIGN_CLASS_NAME]])
     
     # Sort the downsampled data by the specified time column
-    downsampled_df = downsampled_df.sort_values(by=UNSW_NB15_Config.TIME_COLS_NAME)
+    downsampled_df = downsampled_df.sort_values(by=UNSW_NB15_Config.TIME_COL_NAMES)
     
     # Save the downsampled and sorted data to a new CSV file
     downsampled_df.to_csv(output_file, index=False)
