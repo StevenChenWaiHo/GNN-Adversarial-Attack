@@ -7,7 +7,7 @@ from sklearn.preprocessing import StandardScaler
 import numpy as np
 
 # Paths
-input_dir = './TrafficLabelling/'
+input_dir = './Raw/'
 output_all_raw_path = './All/all_raw.csv' 
 output_all_downsampled_path = './All/all_downsampled.csv' 
 output_train_path = './Train/train_scaled.csv'
@@ -35,10 +35,12 @@ for file in all_files:
 df_list = [pd.read_csv(file, header=0, encoding='cp1252') for file in all_files]
 df_full = pd.concat(df_list)
 
+# ==== Essential Preprocessing START ====
 df_full.columns = df_full.columns.str.strip()
 
 # Strip whitespaces from all string columns
-df_full = df_full.applymap(lambda x: x.strip() if isinstance(x, str) else x)
+for col in df_full.select_dtypes(include='object').columns:
+    df_full[col] = df_full[col].str.strip()
 
 df_full.fillna(0, inplace=True)
 
@@ -51,6 +53,8 @@ df_full[ATTACK_CLASS_COL_NAME] = (
     .str.strip()
 )
 
+# ==== Essential Preprocessing END ====
+
 print(df_full[ATTACK_CLASS_COL_NAME].value_counts())
 
 if 'Web Attack - Brute Force' not in df_full[ATTACK_CLASS_COL_NAME].unique():
@@ -58,9 +62,10 @@ if 'Web Attack - Brute Force' not in df_full[ATTACK_CLASS_COL_NAME].unique():
 
 df_full.to_csv(output_all_raw_path, index=False, header=True)
 
-# Drop unnecessary columns
+# ==== Optional Preprocessing START ====
 df_full.drop(columns=CIC_IDS_2017_Config.DROP_COLS,inplace=True)
 
+# 2. Convert columns to appropriate data types
 df_full[SOURCE_IP_COL_NAME] = df_full[SOURCE_IP_COL_NAME].apply(str)
 df_full[SOURCE_PORT_COL_NAME] = df_full[SOURCE_PORT_COL_NAME].apply(str)
 df_full[DESTINATION_IP_COL_NAME] = df_full[DESTINATION_IP_COL_NAME].apply(str)
@@ -68,12 +73,13 @@ df_full[DESTINATION_PORT_COL_NAME] = df_full[DESTINATION_PORT_COL_NAME].apply(st
 
 print(df_full.head)
 
+# 3. Handle missing values
 df_full = df_full.reset_index()
 df_full.replace([np.inf, -np.inf], np.nan,inplace = True)
 df_full.fillna(0,inplace = True)
 df_full.drop(columns=[INDEX_COL_NAME],inplace=True)
 
-# Categorical columns to one-hot encode
+# 4. Encode categorical columns
 df_full = pd.get_dummies(df_full, columns=CIC_IDS_2017_Config.CATEGORICAL_COLS)
 df_full = df_full.applymap(lambda x: int(x) if isinstance(x, (bool, np.bool_)) else x)
 
@@ -101,11 +107,12 @@ def check_numeric_issues(df, cols_to_norm):
 
 check_numeric_issues(df_full, CIC_IDS_2017_Config.COLS_TO_NORM)
 
-# Downsample the data by 10%
+# ==== Optional Preprocessing END ====
+
+# Downsample the data by 90%
 normal_traffic_df = df_full[df_full[CIC_IDS_2017_Config.ATTACK_CLASS_COL_NAME] == CIC_IDS_2017_Config.BENIGN_CLASS_NAME]
 downsampled_normal_df = normal_traffic_df.sample(frac=0.1, random_state=42)
 downsampled_df = pd.concat([downsampled_normal_df, df_full[df_full[CIC_IDS_2017_Config.ATTACK_CLASS_COL_NAME] != CIC_IDS_2017_Config.BENIGN_CLASS_NAME]])
-
 
 print("downsampled: ", df_full.head(5))
 # Save the downsampled and sorted data to a new CSV file
