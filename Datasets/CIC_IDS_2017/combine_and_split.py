@@ -10,8 +10,8 @@ import numpy as np
 input_dir = './Raw/'
 output_all_raw_path = './All/all_raw.csv' 
 output_all_downsampled_path = './All/all_downsampled.csv' 
-output_train_path = './Train/train_scaled.csv'
-output_eval_path = './Eval/eval_scaled.csv'
+output_train_path = './Train/train_preprocessed.csv'
+output_eval_path = './Eval/eval_preprocessed.csv'
 
 SOURCE_IP_COL_NAME = CIC_IDS_2017_Config.SOURCE_IP_COL_NAME
 DESTINATION_IP_COL_NAME = CIC_IDS_2017_Config.DESTINATION_IP_COL_NAME
@@ -24,23 +24,25 @@ INDEX_COL_NAME = CIC_IDS_2017_Config.INDEX_COL_NAME
 # Combine all CSV files in the input directory
 all_files = [os.path.join(input_dir, f) for f in os.listdir(input_dir) if f.endswith('.csv')]
 
-for file in all_files:
+df_list = []
+for i, file in enumerate(all_files):
     try:
         df = pd.read_csv(file, header=0, encoding='cp1252')
-        # df_list.append(df)
-    except UnicodeDecodeError as e:
-        print(f"UnicodeDecodeError in file: {file}")
-        print(f"Error: {e}")
 
-df_list = [pd.read_csv(file, header=0, encoding='cp1252') for file in all_files]
-# Before concatenating, remap src and dst IP columns, to ensure two df dont have the same ip
-for i, df in enumerate(df_list):
-    df.columns = df.columns.str.strip()
-    if SOURCE_IP_COL_NAME in df.columns:
-        df[SOURCE_IP_COL_NAME] = df[SOURCE_IP_COL_NAME].astype(str).apply(lambda x: f"{x}_{i}")
-    if DESTINATION_IP_COL_NAME in df.columns:
-        df[DESTINATION_IP_COL_NAME] = df[DESTINATION_IP_COL_NAME].astype(str).apply(lambda x: f"{x}_{i}")
-    df['source_file_id'] = i
+        assert SOURCE_IP_COL_NAME in df.columns, f"{SOURCE_IP_COL_NAME} not found in {file}"
+        assert DESTINATION_IP_COL_NAME in df.columns, f"{DESTINATION_IP_COL_NAME} not found in {file}"
+
+        df.columns = df.columns.str.strip()
+        if SOURCE_IP_COL_NAME in df.columns:
+            df[SOURCE_IP_COL_NAME] = df[SOURCE_IP_COL_NAME].astype(str).apply(lambda x: f"{x}_{i}")
+        if DESTINATION_IP_COL_NAME in df.columns:
+            df[DESTINATION_IP_COL_NAME] = df[DESTINATION_IP_COL_NAME].astype(str).apply(lambda x: f"{x}_{i}")
+        df['source_file_id'] = i
+
+        df_list.append(df)
+    except UnicodeDecodeError as e:
+        print(f"Error in file: {file}")
+        print(f"Error: {e}")
 
 df_full = pd.concat(df_list)
 
@@ -70,31 +72,39 @@ if 'Web Attack - Brute Force' not in df_full[ATTACK_CLASS_COL_NAME].unique():
 
 df_full.to_csv(output_all_raw_path, index=False, header=True)
 
+# Downsample the data by 90%
+normal_traffic_df = df_full[df_full[CIC_IDS_2017_Config.ATTACK_CLASS_COL_NAME] == CIC_IDS_2017_Config.BENIGN_CLASS_NAME]
+downsampled_normal_df = normal_traffic_df.sample(frac=0.1, random_state=42)
+downsampled_df = pd.concat([downsampled_normal_df, df_full[df_full[CIC_IDS_2017_Config.ATTACK_CLASS_COL_NAME] != CIC_IDS_2017_Config.BENIGN_CLASS_NAME]])
+
+downsampled_df.to_csv(output_all_downsampled_path, index=False, header=True)
+
 # ==== Optional Preprocessing START ====
-df_full.drop(columns=CIC_IDS_2017_Config.DROP_COLS,inplace=True)
+downsampled_preprocessed = downsampled_df.drop(columns=CIC_IDS_2017_Config.DROP_COLS)
 
 # 2. Convert columns to appropriate data types
-df_full[SOURCE_IP_COL_NAME] = df_full[SOURCE_IP_COL_NAME].apply(str)
-df_full[SOURCE_PORT_COL_NAME] = df_full[SOURCE_PORT_COL_NAME].apply(str)
-df_full[DESTINATION_IP_COL_NAME] = df_full[DESTINATION_IP_COL_NAME].apply(str)
-df_full[DESTINATION_PORT_COL_NAME] = df_full[DESTINATION_PORT_COL_NAME].apply(str)
+downsampled_preprocessed[SOURCE_IP_COL_NAME] = downsampled_preprocessed[SOURCE_IP_COL_NAME].apply(str)
+downsampled_preprocessed[SOURCE_PORT_COL_NAME] = downsampled_preprocessed[SOURCE_PORT_COL_NAME].apply(str)
+downsampled_preprocessed[DESTINATION_IP_COL_NAME] = downsampled_preprocessed[DESTINATION_IP_COL_NAME].apply(str)
+downsampled_preprocessed[DESTINATION_PORT_COL_NAME] = downsampled_preprocessed[DESTINATION_PORT_COL_NAME].apply(str)
 
-print(df_full.head)
+print(downsampled_preprocessed.head)
 
 # 3. Handle missing values
-df_full = df_full.reset_index()
-df_full.replace([np.inf, -np.inf], np.nan,inplace = True)
-df_full.fillna(0,inplace = True)
-df_full.drop(columns=[INDEX_COL_NAME],inplace=True)
+downsampled_preprocessed = downsampled_preprocessed.reset_index()
+downsampled_preprocessed.replace([np.inf, -np.inf], np.nan,inplace = True)
+downsampled_preprocessed.fillna(0,inplace = True)
+downsampled_preprocessed.drop(columns=[INDEX_COL_NAME],inplace=True)
 
 # 4. Encode categorical columns
-df_full = pd.get_dummies(df_full, columns=CIC_IDS_2017_Config.CATEGORICAL_COLS)
-df_full = df_full.applymap(lambda x: int(x) if isinstance(x, (bool, np.bool_)) else x)
+downsampled_preprocessed = pd.get_dummies(downsampled_preprocessed, columns=CIC_IDS_2017_Config.CATEGORICAL_COLS)
+bool_cols = downsampled_preprocessed.select_dtypes(include='bool').columns
+downsampled_preprocessed[bool_cols] = downsampled_preprocessed[bool_cols].astype(int)
 
 
 print(f"=====Columns=====")
-print(df_full.columns.tolist())
-print('No. of Columns: ', len(df_full.columns.tolist()))
+print(downsampled_preprocessed.columns.tolist())
+print('No. of Columns: ', len(downsampled_preprocessed.columns.tolist()))
 
 def check_numeric_issues(df, cols_to_norm):
     for col in cols_to_norm:
@@ -113,24 +123,18 @@ def check_numeric_issues(df, cols_to_norm):
 
     print("\n✅ All other columns processed successfully.")
 
-check_numeric_issues(df_full, CIC_IDS_2017_Config.COLS_TO_NORM)
+check_numeric_issues(downsampled_preprocessed, CIC_IDS_2017_Config.COLS_TO_NORM)
 
 # ==== Optional Preprocessing END ====
 
-# Downsample the data by 90%
-normal_traffic_df = df_full[df_full[CIC_IDS_2017_Config.ATTACK_CLASS_COL_NAME] == CIC_IDS_2017_Config.BENIGN_CLASS_NAME]
-downsampled_normal_df = normal_traffic_df.sample(frac=0.1, random_state=42)
-downsampled_df = pd.concat([downsampled_normal_df, df_full[df_full[CIC_IDS_2017_Config.ATTACK_CLASS_COL_NAME] != CIC_IDS_2017_Config.BENIGN_CLASS_NAME]])
-
-print("downsampled: ", df_full.head(5))
+print("downsampled: ", downsampled_preprocessed.head(5))
 # Save the downsampled and sorted data to a new CSV file
-downsampled_df.to_csv(output_all_downsampled_path, index=False)
 
 # Split the dataset
 train_df, test_df = train_test_split(
-    downsampled_df,
+    downsampled_preprocessed,
     test_size=0.15,
-    stratify=downsampled_df[CIC_IDS_2017_Config.ATTACK_CLASS_COL_NAME],
+    stratify=downsampled_preprocessed[CIC_IDS_2017_Config.ATTACK_CLASS_COL_NAME],
     random_state=42
 )
 
