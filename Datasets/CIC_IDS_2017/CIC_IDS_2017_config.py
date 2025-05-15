@@ -63,4 +63,4 @@ class CIC_IDS_2017_Config:
         "Protocol", 
     ]
 
-    assert (set(COLS_TO_NORM) | set(CATEGORICAL_COLS)).issubset(set(COL_NAMES) - set(DROP_COLS)), f"Some columns are not in the right place. Please check the column names in {DATASET_NAME}_config.py ."
+    assert (set(COLS_TO_NORM) | set(CATEGORICAL_COLS)).issubset(set(col_names) - set(DROP_COLS)), f"Some columns are not in the right place. Please check the column names in {DATASET_NAME}_config.py ."
