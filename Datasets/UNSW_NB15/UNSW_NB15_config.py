@@ -14,6 +14,8 @@ class UNSW_NB15_Config:
 
     TIME_COL_NAMES = ["Stime", "Ltime"]
 
+    SOURCE_FILE_ID_COL_NAME = "source_file_id"
+
     COL_NAMES = [
         "srcip",
         "sport",

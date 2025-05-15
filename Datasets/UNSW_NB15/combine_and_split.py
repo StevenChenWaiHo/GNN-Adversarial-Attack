@@ -10,7 +10,7 @@ from sklearn.preprocessing import StandardScaler
 input_dir = './Raw'
 output_all_raw_path = './All/all_raw.csv' 
 output_all_downsampled_path = './All/all_downsampled.csv' 
-output_all_processed_path = './All/all_preprocessed.csv' 
+output_all_processed_path = './All/all_preprocessed_downsampled.csv' 
 output_train_path = './Train/train_preprocessed.csv'
 output_eval_path = './Eval/eval_preprocessed.csv'
 
@@ -19,14 +19,38 @@ CATEGORICAL_COLS = UNSW_NB15_Config.CATEGORICAL_COLS
 COLS_TO_NORM = UNSW_NB15_Config.COLS_TO_NORM
 TIME_COL_NAMES = UNSW_NB15_Config.TIME_COL_NAMES
 
+SOURCE_IP_COL_NAME = UNSW_NB15_Config.SOURCE_IP_COL_NAME
+DESTINATION_IP_COL_NAME = UNSW_NB15_Config.DESTINATION_IP_COL_NAME
+
 ATTACK_CLASS_COL_NAME = UNSW_NB15_Config.ATTACK_CLASS_COL_NAME
 BENIGN_CLASS_NAME = UNSW_NB15_Config.BENIGN_CLASS_NAME
 IS_ATTACK_COL_NAME = UNSW_NB15_Config.IS_ATTACK_COL_NAME
 
+SOURCE_FILE_ID_COL_NAME = UNSW_NB15_Config.SOURCE_FILE_ID_COL_NAME
+
 # Combine all CSV files in the input directory
 all_files = [os.path.join(input_dir, f) for f in os.listdir(input_dir) if f.endswith('.csv')]
-df_list = [pd.read_csv(file, header=None, names=COL_NAMES) for file in all_files]  # Use the header list from config
-df_full = pd.concat(df_list, ignore_index=True)
+df_list = []
+for i, file in enumerate(all_files):
+    try:
+        df = pd.read_csv(file, header=None, names=COL_NAMES)
+
+        assert SOURCE_IP_COL_NAME in df.columns, f"{SOURCE_IP_COL_NAME} not found in {file}"
+        assert DESTINATION_IP_COL_NAME in df.columns, f"{DESTINATION_IP_COL_NAME} not found in {file}"
+
+        df.columns = df.columns.str.strip()
+        if SOURCE_IP_COL_NAME in df.columns:
+            df[SOURCE_IP_COL_NAME] = df[SOURCE_IP_COL_NAME].astype(str).apply(lambda x: f"{x}_{i}")
+        if DESTINATION_IP_COL_NAME in df.columns:
+            df[DESTINATION_IP_COL_NAME] = df[DESTINATION_IP_COL_NAME].astype(str).apply(lambda x: f"{x}_{i}")
+        df['source_file_id'] = i
+
+        df_list.append(df)
+    except UnicodeDecodeError as e:
+        print(f"Error in file: {file}")
+        print(f"Error: {e}")
+
+df_full = pd.concat(df_list)
 
 # ==== Essential Preprocessing START ====
 
@@ -40,8 +64,10 @@ df_full.loc[df_full[IS_ATTACK_COL_NAME] == 0, ATTACK_CLASS_COL_NAME] = BENIGN_CL
 # Fill NaNs
 df_full.fillna(0, inplace=True)
 
-df_full = df_full.sort_values(by=TIME_COL_NAMES)
-sorted_correctly = df_full[TIME_COL_NAMES].astype(str).apply(tuple, axis=1).is_monotonic_increasing
+sort_by_cols = [SOURCE_FILE_ID_COL_NAME] + TIME_COL_NAMES
+
+df_full = df_full.sort_values(by=sort_by_cols)
+sorted_correctly = df_full[sort_by_cols].astype(str).apply(tuple, axis=1).is_monotonic_increasing
 assert sorted_correctly, "DataFrame is not sorted by TIME_COL_NAMES"
 
 # Relabel misspelled classes backdoor -> backdoors
@@ -51,7 +77,19 @@ df_full[ATTACK_CLASS_COL_NAME] = df_full[ATTACK_CLASS_COL_NAME].replace({'Backdo
 
 df_full.to_csv(output_all_raw_path, index=False, header=True)
 
-df_processed = preprocess(df_full)
+# Downsample the data by 10%
+normal_traffic_df = df_full[df_full[ATTACK_CLASS_COL_NAME] == BENIGN_CLASS_NAME]
+downsampled_normal_df = normal_traffic_df.sample(frac=0.1, random_state=42)
+downsampled_df = pd.concat([downsampled_normal_df, df_full[df_full[ATTACK_CLASS_COL_NAME] != BENIGN_CLASS_NAME]])
+
+# Sort the downsampled data by the specified time column
+downsampled_df = downsampled_df.sort_values(by=sort_by_cols)
+
+# Save the downsampled and sorted data to a new CSV file
+downsampled_df.to_csv(output_all_downsampled_path, index=False)
+print(f"Downsampled CSV saved to {output_all_downsampled_path}")
+
+df_processed = preprocess(downsampled_df)
 
 # Categorical columns to one-hot encode
 df_processed = pd.get_dummies(df_processed, columns=CATEGORICAL_COLS, drop_first=True)
@@ -79,21 +117,11 @@ def check_numeric_issues(df, cols_to_norm):
 
 check_numeric_issues(df_processed, COLS_TO_NORM)
 
-# Downsample the data by 90%
-normal_traffic_df = df_processed[df_processed[ATTACK_CLASS_COL_NAME] == BENIGN_CLASS_NAME]
-downsampled_normal_df = normal_traffic_df.sample(frac=0.1, random_state=42)
-downsampled_df = pd.concat([downsampled_normal_df, df_processed[df_processed[ATTACK_CLASS_COL_NAME] != BENIGN_CLASS_NAME]])
-
-# Sort the downsampled data by the specified time column
-downsampled_df = downsampled_df.sort_values(by=TIME_COL_NAMES)
-
-downsampled_df.to_csv(output_all_downsampled_path, index=False, header=True)
-
 # Split the dataset
 train_df, test_df = train_test_split(
-    downsampled_df,
+    df_processed,
     test_size=0.15,
-    stratify=downsampled_df[ATTACK_CLASS_COL_NAME],
+    stratify=df_processed[ATTACK_CLASS_COL_NAME],
     random_state=42
 )
 
