@@ -15,7 +15,9 @@ class CIC_IDS_2017_Config:
 
     INDEX_COL_NAME = "Flow ID"
 
-    COL_NAMES = [
+    SOURCE_FILE_ID_COL_NAME = "source_file_id"
+
+    col_names = [
         "Flow ID", "Source IP", "Source Port", "Destination IP", "Destination Port", "Protocol", "Timestamp", "Flow Duration", 
         "Total Fwd Packets", "Total Backward Packets", "Total Length of Fwd Packets", "Total Length of Bwd Packets", 
         "Fwd Packet Length Max", "Fwd Packet Length Min", "Fwd Packet Length Mean", "Fwd Packet Length Std", 
@@ -32,7 +34,7 @@ class CIC_IDS_2017_Config:
         "Bwd Avg Packets/Bulk", "Bwd Avg Bulk Rate", "Subflow Fwd Packets", "Subflow Fwd Bytes", 
         "Subflow Bwd Packets", "Subflow Bwd Bytes", "Init_Win_bytes_forward", "Init_Win_bytes_backward", 
         "act_data_pkt_fwd", "min_seg_size_forward", "Active Mean", "Active Std", "Active Max", "Active Min", 
-        "Idle Mean", "Idle Std", "Idle Max", "Idle Min", "Label"
+        "Idle Mean", "Idle Std", "Idle Max", "Idle Min", "Label", "source_file_id"
     ]
 
     CHOSEN_COLS = [
@@ -44,7 +46,7 @@ class CIC_IDS_2017_Config:
         'Flow Packets/s', 'PSH Flag Count', 'Average Packet Size', 'Protocol'
     ]
 
-    DROP_COLS = set(COL_NAMES) - set(CHOSEN_COLS) - set(TIME_COL_NAMES)
+    DROP_COLS = set(col_names) - set(CHOSEN_COLS) - set(TIME_COL_NAMES)
     DROP_COLS = []
 
     COLS_TO_NORM = [

@@ -33,10 +33,18 @@ for file in all_files:
         print(f"Error: {e}")
 
 df_list = [pd.read_csv(file, header=0, encoding='cp1252') for file in all_files]
+# Before concatenating, remap src and dst IP columns, to ensure two df dont have the same ip
+for i, df in enumerate(df_list):
+    df.columns = df.columns.str.strip()
+    if SOURCE_IP_COL_NAME in df.columns:
+        df[SOURCE_IP_COL_NAME] = df[SOURCE_IP_COL_NAME].astype(str).apply(lambda x: f"{x}_{i}")
+    if DESTINATION_IP_COL_NAME in df.columns:
+        df[DESTINATION_IP_COL_NAME] = df[DESTINATION_IP_COL_NAME].astype(str).apply(lambda x: f"{x}_{i}")
+    df['source_file_id'] = i
+
 df_full = pd.concat(df_list)
 
 # ==== Essential Preprocessing START ====
-df_full.columns = df_full.columns.str.strip()
 
 # Strip whitespaces from all string columns
 for col in df_full.select_dtypes(include='object').columns:
