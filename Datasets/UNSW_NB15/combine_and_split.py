@@ -22,11 +22,22 @@ TIME_COL_NAMES = UNSW_NB15_Config.TIME_COL_NAMES
 SOURCE_IP_COL_NAME = UNSW_NB15_Config.SOURCE_IP_COL_NAME
 DESTINATION_IP_COL_NAME = UNSW_NB15_Config.DESTINATION_IP_COL_NAME
 
+SOURCE_PORT_COL_NAME = UNSW_NB15_Config.SOURCE_PORT_COL_NAME
+DESTINATION_PORT_COL_NAME = UNSW_NB15_Config.DESTINATION_PORT_COL_NAME
+
 ATTACK_CLASS_COL_NAME = UNSW_NB15_Config.ATTACK_CLASS_COL_NAME
 BENIGN_CLASS_NAME = UNSW_NB15_Config.BENIGN_CLASS_NAME
 IS_ATTACK_COL_NAME = UNSW_NB15_Config.IS_ATTACK_COL_NAME
 
 SOURCE_FILE_ID_COL_NAME = UNSW_NB15_Config.SOURCE_FILE_ID_COL_NAME
+
+def parse_port(p):
+    try:
+        if isinstance(p, str) and p.lower().startswith('0x'):
+            return int(p, 16)
+        return int(p)
+    except:
+        return -1  # or np.nan if you prefer
 
 # Combine all CSV files in the input directory
 all_files = [os.path.join(input_dir, f) for f in os.listdir(input_dir) if f.endswith('.csv')]
@@ -34,15 +45,19 @@ df_list = []
 for i, file in enumerate(all_files):
     try:
         df = pd.read_csv(file, header=None, names=COL_NAMES)
+        df.columns = df.columns.str.strip()
 
         assert SOURCE_IP_COL_NAME in df.columns, f"{SOURCE_IP_COL_NAME} not found in {file}"
         assert DESTINATION_IP_COL_NAME in df.columns, f"{DESTINATION_IP_COL_NAME} not found in {file}"
+        assert SOURCE_PORT_COL_NAME in df.columns, f"{SOURCE_PORT_COL_NAME} not found in {file}"
+        assert DESTINATION_PORT_COL_NAME in df.columns, f"{DESTINATION_PORT_COL_NAME} not found in {file}"
 
-        df.columns = df.columns.str.strip()
-        if SOURCE_IP_COL_NAME in df.columns:
-            df[SOURCE_IP_COL_NAME] = df[SOURCE_IP_COL_NAME].astype(str).apply(lambda x: f"{x}_{i}")
-        if DESTINATION_IP_COL_NAME in df.columns:
-            df[DESTINATION_IP_COL_NAME] = df[DESTINATION_IP_COL_NAME].astype(str).apply(lambda x: f"{x}_{i}")
+        df[SOURCE_IP_COL_NAME] = df[SOURCE_IP_COL_NAME].astype(str).apply(lambda x: f"{x}_{i}")
+        df[DESTINATION_IP_COL_NAME] = df[DESTINATION_IP_COL_NAME].astype(str).apply(lambda x: f"{x}_{i}")
+
+        df[SOURCE_PORT_COL_NAME] = df[SOURCE_PORT_COL_NAME].astype(str).apply(parse_port)
+        df[DESTINATION_PORT_COL_NAME] = df[DESTINATION_PORT_COL_NAME].astype(str).apply(parse_port)
+        
         df['source_file_id'] = i
 
         df_list.append(df)
@@ -76,6 +91,7 @@ df_full[ATTACK_CLASS_COL_NAME] = df_full[ATTACK_CLASS_COL_NAME].replace({'Backdo
 # ==== Essential Preprocessing END ====
 
 df_full.to_csv(output_all_raw_path, index=False, header=True)
+print(f"Raw CSV saved to {output_all_raw_path}")
 
 # Downsample the data by 10%
 normal_traffic_df = df_full[df_full[ATTACK_CLASS_COL_NAME] == BENIGN_CLASS_NAME]
@@ -88,6 +104,8 @@ downsampled_df = downsampled_df.sort_values(by=sort_by_cols)
 # Save the downsampled and sorted data to a new CSV file
 downsampled_df.to_csv(output_all_downsampled_path, index=False)
 print(f"Downsampled CSV saved to {output_all_downsampled_path}")
+
+exit()
 
 df_processed = preprocess(downsampled_df)
 

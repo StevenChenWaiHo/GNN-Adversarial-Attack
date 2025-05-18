@@ -2373,7 +2373,889 @@ Best F1 Score at epoch 59: 0.8874, Parameters: lr=0.01, hidden_dim512, drop_out=
 Best F1 Score at epoch 63: 0.8902, Parameters: lr=0.01, hidden_dim512, drop_out=0.4
 Best F1 Score at epoch 69: 0.8949, Parameters: lr=0.01, hidden_dim512, drop_out=0.4
 Best F1 Score at epoch 76: 0.9029, Parameters: lr=0.01, hidden_dim512, drop_out=0.4
+
+
+===== ADDED 0.0005 LR =====
+
+
+Number of edges in G_pyg: 307790
+Number of node in G_pyg: 32941
+Shape of node in G_pyg: torch.Size([32941, 52])
+Shape of edge attr in G_pyg: torch.Size([307790, 52])
+Shape of edge label in G_pyg: torch.Size([307790])
+Number of edges in G_pyg: 153895
+Number of node in G_pyg: 17455
+Shape of node in G_pyg: torch.Size([17455, 52])
+Shape of edge attr in G_pyg: torch.Size([153895, 52])
+Shape of edge label in G_pyg: torch.Size([153895])
+Number of edges in G_pyg: 307790
+Number of node in G_pyg: 32777
+Shape of node in G_pyg: torch.Size([32777, 52])
+Shape of edge attr in G_pyg: torch.Size([307790, 52])
+Shape of edge label in G_pyg: torch.Size([307790])
+Number of edges in G_pyg: 153895
+Number of node in G_pyg: 17575
+Shape of node in G_pyg: torch.Size([17575, 52])
+Shape of edge attr in G_pyg: torch.Size([153895, 52])
+Shape of edge label in G_pyg: torch.Size([153895])
+Number of edges in G_pyg: 307790
+Number of node in G_pyg: 32912
+Shape of node in G_pyg: torch.Size([32912, 52])
+Shape of edge attr in G_pyg: torch.Size([307790, 52])
+Shape of edge label in G_pyg: torch.Size([307790])
+Number of edges in G_pyg: 153895
+Number of node in G_pyg: 17452
+Shape of node in G_pyg: torch.Size([17452, 52])
+Shape of edge attr in G_pyg: torch.Size([153895, 52])
+Shape of edge label in G_pyg: torch.Size([153895])
+Testing with learning rate: 0.0005, hidden_dim: 128
+Fold 1
+Class weights: tensor([2.0289e+01, 2.3317e+01, 3.3217e+00, 1.2199e+00, 2.2403e+00, 2.5207e-01,
+        2.4480e-01, 3.8833e+00, 3.5957e+01, 3.1090e+02], device='cuda:0')
+Best F1 Score at epoch 0: 0.1044, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Epoch 0, Train Loss: 2.5561, Validation Loss: 2.4055, Validation F1: 0.1044
+Best F1 Score at epoch 1: 0.2897, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 2: 0.3396, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 3: 0.4151, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 6: 0.4463, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 7: 0.7263, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 8: 0.7289, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 9: 0.7534, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 10: 0.7606, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 13: 0.7720, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 15: 0.7849, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 17: 0.8016, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 19: 0.8254, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 21: 0.8330, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 22: 0.8502, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 24: 0.8551, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 27: 0.8561, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 28: 0.8658, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 38: 0.8693, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 39: 0.8716, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 40: 0.8748, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 51: 0.8774, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 56: 0.8780, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 57: 0.8806, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 70: 0.8811, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 71: 0.8831, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 96: 0.8848, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Fold 2
+Class weights: tensor([2.0303e+01, 2.3317e+01, 3.3214e+00, 1.2199e+00, 2.2403e+00, 2.5207e-01,
+        2.4480e-01, 3.8833e+00, 3.5957e+01, 3.1090e+02], device='cuda:0')
+Best F1 Score at epoch 0: 0.0162, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Epoch 0, Train Loss: 2.4383, Validation Loss: 2.3188, Validation F1: 0.0162
+Best F1 Score at epoch 1: 0.3357, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 2: 0.4868, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 3: 0.5688, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 4: 0.6237, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 5: 0.6521, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 6: 0.6741, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 7: 0.6917, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 9: 0.7003, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 10: 0.7216, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 11: 0.7478, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 12: 0.7654, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 14: 0.7749, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 15: 0.7821, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 17: 0.7834, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 18: 0.7952, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 20: 0.8052, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 24: 0.8096, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 25: 0.8153, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 26: 0.8300, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 28: 0.8471, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 32: 0.8626, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 35: 0.8629, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 36: 0.8676, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 40: 0.8708, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 42: 0.8764, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 46: 0.8782, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 48: 0.8793, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 59: 0.8841, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 82: 0.8843, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 91: 0.8846, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Fold 3
+Class weights: tensor([2.0289e+01, 2.3317e+01, 3.3214e+00, 1.2199e+00, 2.2401e+00, 2.5207e-01,
+        2.4480e-01, 3.8833e+00, 3.5957e+01, 3.1407e+02], device='cuda:0')
+Best F1 Score at epoch 0: 0.0060, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Epoch 0, Train Loss: 2.6431, Validation Loss: 2.4350, Validation F1: 0.0060
+Best F1 Score at epoch 1: 0.1209, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 2: 0.3474, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 3: 0.5061, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 4: 0.5906, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 5: 0.6523, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 6: 0.6854, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 7: 0.7217, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 9: 0.7390, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 10: 0.7573, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 11: 0.7656, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 12: 0.7755, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 13: 0.7856, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 14: 0.7945, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 15: 0.8014, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 16: 0.8032, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 17: 0.8166, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 21: 0.8400, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 23: 0.8444, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 24: 0.8542, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 26: 0.8580, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 28: 0.8674, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 30: 0.8736, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 39: 0.8762, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 41: 0.8776, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 43: 0.8793, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 46: 0.8795, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 56: 0.8801, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 58: 0.8814, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 59: 0.8825, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Best F1 Score at epoch 80: 0.8855, Parameters: lr=0.0005, hidden_dim128, drop_out=0.2
+Current Results:  {(0.2, 0.0005, 128): {'folds': [0.8848306437670744, 0.8846195701333323, 0.8855187321443875], 'avg_f1': 0.8849896486815981}}
+Average F1 Score for dropout 0.2 learning rate 0.0005, hidden_dim 128: 0.8850
+Testing with learning rate: 0.0005, hidden_dim: 128
+Fold 1
+Class weights: tensor([2.0289e+01, 2.3317e+01, 3.3217e+00, 1.2199e+00, 2.2403e+00, 2.5207e-01,
+        2.4480e-01, 3.8833e+00, 3.5957e+01, 3.1090e+02], device='cuda:0')
+Best F1 Score at epoch 0: 0.3232, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Epoch 0, Train Loss: 2.3142, Validation Loss: 2.1914, Validation F1: 0.3232
+Best F1 Score at epoch 1: 0.6036, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 3: 0.6623, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 4: 0.7319, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 5: 0.7454, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 9: 0.7471, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 10: 0.7599, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 11: 0.7645, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 12: 0.7815, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 14: 0.7859, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 15: 0.7890, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 16: 0.8063, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 18: 0.8098, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 19: 0.8115, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 20: 0.8245, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 21: 0.8363, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 23: 0.8451, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 25: 0.8518, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 27: 0.8539, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 28: 0.8615, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 29: 0.8651, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 31: 0.8707, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 36: 0.8755, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 41: 0.8761, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 45: 0.8762, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 47: 0.8798, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 58: 0.8821, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 70: 0.8841, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Fold 2
+Class weights: tensor([2.0303e+01, 2.3317e+01, 3.3214e+00, 1.2199e+00, 2.2403e+00, 2.5207e-01,
+        2.4480e-01, 3.8833e+00, 3.5957e+01, 3.1090e+02], device='cuda:0')
+Best F1 Score at epoch 0: 0.2871, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Epoch 0, Train Loss: 2.4983, Validation Loss: 2.3746, Validation F1: 0.2871
+Best F1 Score at epoch 1: 0.4804, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 2: 0.6088, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 3: 0.6830, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 4: 0.6965, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 5: 0.7286, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 7: 0.7336, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 8: 0.7448, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 9: 0.7589, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 15: 0.7682, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 16: 0.7701, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 17: 0.7886, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 18: 0.8086, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 21: 0.8097, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 22: 0.8117, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 23: 0.8151, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 25: 0.8254, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 32: 0.8281, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 33: 0.8450, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 35: 0.8545, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 36: 0.8563, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 37: 0.8572, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 38: 0.8619, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 41: 0.8654, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 42: 0.8665, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 43: 0.8683, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 45: 0.8701, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 49: 0.8702, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 50: 0.8715, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 52: 0.8726, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 55: 0.8758, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 64: 0.8771, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 66: 0.8778, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 68: 0.8791, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 76: 0.8804, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 78: 0.8831, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 94: 0.8838, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Fold 3
+Class weights: tensor([2.0289e+01, 2.3317e+01, 3.3214e+00, 1.2199e+00, 2.2401e+00, 2.5207e-01,
+        2.4480e-01, 3.8833e+00, 3.5957e+01, 3.1407e+02], device='cuda:0')
+Best F1 Score at epoch 0: 0.2251, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Epoch 0, Train Loss: 2.6663, Validation Loss: 2.4768, Validation F1: 0.2251
+Best F1 Score at epoch 1: 0.2734, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 2: 0.3040, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 3: 0.5718, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 4: 0.6603, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 7: 0.6686, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 8: 0.7253, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 10: 0.7308, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 12: 0.7383, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 13: 0.7434, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 14: 0.7627, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 17: 0.7778, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 18: 0.7827, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 20: 0.7852, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 21: 0.8084, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 24: 0.8103, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 26: 0.8240, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 29: 0.8396, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 30: 0.8447, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 31: 0.8487, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 32: 0.8495, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 34: 0.8561, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 38: 0.8678, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 39: 0.8704, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 43: 0.8708, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 46: 0.8715, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 47: 0.8716, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 50: 0.8731, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 51: 0.8752, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 53: 0.8761, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 55: 0.8775, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 60: 0.8801, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 79: 0.8803, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 84: 0.8806, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 85: 0.8825, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Best F1 Score at epoch 99: 0.8838, Parameters: lr=0.0005, hidden_dim128, drop_out=0.3
+Current Results:  {(0.2, 0.0005, 128): {'folds': [0.8848306437670744, 0.8846195701333323, 0.8855187321443875], 'avg_f1': 0.8849896486815981}, (0.3, 0.0005, 128): {'folds': [0.8840680382989046, 0.8838043291890669, 0.883767964926719], 'avg_f1': 0.8838801108048968}}
+Average F1 Score for dropout 0.3 learning rate 0.0005, hidden_dim 128: 0.8839
+Testing with learning rate: 0.0005, hidden_dim: 128
+Fold 1
+Class weights: tensor([2.0289e+01, 2.3317e+01, 3.3217e+00, 1.2199e+00, 2.2403e+00, 2.5207e-01,
+        2.4480e-01, 3.8833e+00, 3.5957e+01, 3.1090e+02], device='cuda:0')
+Best F1 Score at epoch 0: 0.2272, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Epoch 0, Train Loss: 2.4900, Validation Loss: 2.3589, Validation F1: 0.2272
+Best F1 Score at epoch 2: 0.2904, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 3: 0.5719, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 5: 0.6607, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 6: 0.7472, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 7: 0.7616, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 10: 0.7828, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 11: 0.7974, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 15: 0.8050, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 17: 0.8053, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 18: 0.8088, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 19: 0.8236, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 24: 0.8292, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 25: 0.8316, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 26: 0.8363, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 28: 0.8450, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 31: 0.8543, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 32: 0.8579, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 34: 0.8618, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 37: 0.8647, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 39: 0.8680, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 40: 0.8704, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 47: 0.8714, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 52: 0.8736, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 54: 0.8749, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 59: 0.8773, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 65: 0.8782, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 75: 0.8791, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 87: 0.8815, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 88: 0.8825, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 91: 0.8826, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Fold 2
+Class weights: tensor([2.0303e+01, 2.3317e+01, 3.3214e+00, 1.2199e+00, 2.2403e+00, 2.5207e-01,
+        2.4480e-01, 3.8833e+00, 3.5957e+01, 3.1090e+02], device='cuda:0')
+Best F1 Score at epoch 0: 0.2194, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Epoch 0, Train Loss: 2.6668, Validation Loss: 2.4358, Validation F1: 0.2194
+Best F1 Score at epoch 1: 0.2202, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 3: 0.5357, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 4: 0.6062, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 6: 0.6194, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 8: 0.6720, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 9: 0.6920, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 10: 0.7111, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 11: 0.7487, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 14: 0.7518, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 15: 0.7627, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 16: 0.7665, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 17: 0.7994, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 18: 0.8010, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 19: 0.8096, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 21: 0.8107, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 22: 0.8232, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 27: 0.8368, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 29: 0.8463, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 30: 0.8482, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 31: 0.8579, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 32: 0.8581, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 34: 0.8632, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 39: 0.8672, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 42: 0.8683, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 44: 0.8748, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 63: 0.8755, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 64: 0.8788, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 80: 0.8804, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 91: 0.8838, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Fold 3
+Class weights: tensor([2.0289e+01, 2.3317e+01, 3.3214e+00, 1.2199e+00, 2.2401e+00, 2.5207e-01,
+        2.4480e-01, 3.8833e+00, 3.5957e+01, 3.1407e+02], device='cuda:0')
+Best F1 Score at epoch 0: 0.2307, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Epoch 0, Train Loss: 2.6742, Validation Loss: 2.5218, Validation F1: 0.2307
+Best F1 Score at epoch 1: 0.3419, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 3: 0.4231, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 4: 0.4333, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 5: 0.4863, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 6: 0.5803, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 7: 0.6670, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 8: 0.6786, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 10: 0.7188, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 11: 0.7205, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 12: 0.7389, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 13: 0.7510, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 15: 0.7557, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 16: 0.7705, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 21: 0.7706, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 23: 0.7767, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 24: 0.7929, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 26: 0.8037, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 27: 0.8082, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 28: 0.8192, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 29: 0.8210, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 30: 0.8340, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 31: 0.8623, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 43: 0.8660, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 46: 0.8710, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 59: 0.8717, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 61: 0.8722, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 65: 0.8730, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 66: 0.8750, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 69: 0.8756, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 73: 0.8766, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 75: 0.8767, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 77: 0.8780, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Best F1 Score at epoch 86: 0.8803, Parameters: lr=0.0005, hidden_dim128, drop_out=0.4
+Current Results:  {(0.2, 0.0005, 128): {'folds': [0.8848306437670744, 0.8846195701333323, 0.8855187321443875], 'avg_f1': 0.8849896486815981}, (0.3, 0.0005, 128): {'folds': [0.8840680382989046, 0.8838043291890669, 0.883767964926719], 'avg_f1': 0.8838801108048968}, (0.4, 0.0005, 128): {'folds': [0.8825877049288328, 0.8837779258594431, 0.8802541329714935], 'avg_f1': 0.8822065879199231}}
+Average F1 Score for dropout 0.4 learning rate 0.0005, hidden_dim 128: 0.8822
+Testing with learning rate: 0.0005, hidden_dim: 256
+Fold 1
+Class weights: tensor([2.0289e+01, 2.3317e+01, 3.3217e+00, 1.2199e+00, 2.2403e+00, 2.5207e-01,
+        2.4480e-01, 3.8833e+00, 3.5957e+01, 3.1090e+02], device='cuda:0')
+Best F1 Score at epoch 0: 0.6794, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Epoch 0, Train Loss: 2.3569, Validation Loss: 2.1778, Validation F1: 0.6794
+Best F1 Score at epoch 1: 0.6976, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 2: 0.7229, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 4: 0.7363, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 7: 0.7479, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 8: 0.7801, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 9: 0.7893, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 10: 0.8111, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 11: 0.8301, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 12: 0.8365, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 13: 0.8639, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 15: 0.8653, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 16: 0.8693, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 19: 0.8702, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 20: 0.8738, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 22: 0.8765, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 26: 0.8769, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 27: 0.8786, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 34: 0.8806, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 35: 0.8809, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 40: 0.8824, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 54: 0.8829, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 55: 0.8860, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 76: 0.8861, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 79: 0.8875, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 81: 0.8877, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 87: 0.8882, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 95: 0.8889, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Fold 2
+Class weights: tensor([2.0303e+01, 2.3317e+01, 3.3214e+00, 1.2199e+00, 2.2403e+00, 2.5207e-01,
+        2.4480e-01, 3.8833e+00, 3.5957e+01, 3.1090e+02], device='cuda:0')
+Best F1 Score at epoch 0: 0.1624, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Epoch 0, Train Loss: 2.4522, Validation Loss: 2.2728, Validation F1: 0.1624
+Best F1 Score at epoch 1: 0.3470, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 2: 0.6885, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 3: 0.7194, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 4: 0.7628, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 6: 0.7813, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 8: 0.7813, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 9: 0.7834, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 10: 0.7877, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 11: 0.8181, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 12: 0.8248, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 13: 0.8450, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 14: 0.8546, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 15: 0.8581, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 16: 0.8649, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 18: 0.8679, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 19: 0.8700, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 20: 0.8706, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 24: 0.8719, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 25: 0.8745, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 28: 0.8771, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 35: 0.8779, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 37: 0.8803, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 40: 0.8820, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 49: 0.8850, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 54: 0.8857, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 63: 0.8882, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 68: 0.8887, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Fold 3
+Class weights: tensor([2.0289e+01, 2.3317e+01, 3.3214e+00, 1.2199e+00, 2.2401e+00, 2.5207e-01,
+        2.4480e-01, 3.8833e+00, 3.5957e+01, 3.1407e+02], device='cuda:0')
+Best F1 Score at epoch 0: 0.5195, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Epoch 0, Train Loss: 2.5420, Validation Loss: 2.1948, Validation F1: 0.5195
+Best F1 Score at epoch 1: 0.6785, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 2: 0.6800, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 3: 0.7483, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 5: 0.7709, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 7: 0.8078, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 8: 0.8080, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 9: 0.8117, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 10: 0.8193, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 12: 0.8250, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 14: 0.8500, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 16: 0.8510, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 18: 0.8631, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 19: 0.8742, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 21: 0.8746, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 24: 0.8751, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 28: 0.8767, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 31: 0.8790, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 34: 0.8818, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 56: 0.8824, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 57: 0.8838, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 78: 0.8854, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 87: 0.8855, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 95: 0.8856, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Best F1 Score at epoch 96: 0.8869, Parameters: lr=0.0005, hidden_dim256, drop_out=0.2
+Current Results:  {(0.2, 0.0005, 128): {'folds': [0.8848306437670744, 0.8846195701333323, 0.8855187321443875], 'avg_f1': 0.8849896486815981}, (0.3, 0.0005, 128): {'folds': [0.8840680382989046, 0.8838043291890669, 0.883767964926719], 'avg_f1': 0.8838801108048968}, (0.4, 0.0005, 128): {'folds': [0.8825877049288328, 0.8837779258594431, 0.8802541329714935], 'avg_f1': 0.8822065879199231}, (0.2, 0.0005, 256): {'folds': [0.8888746848400695, 0.8886817963664612, 0.8868714539367958], 'avg_f1': 0.8881426450477754}}
+Average F1 Score for dropout 0.2 learning rate 0.0005, hidden_dim 256: 0.8881
+Testing with learning rate: 0.0005, hidden_dim: 256
+Fold 1
+Class weights: tensor([2.0289e+01, 2.3317e+01, 3.3217e+00, 1.2199e+00, 2.2403e+00, 2.5207e-01,
+        2.4480e-01, 3.8833e+00, 3.5957e+01, 3.1090e+02], device='cuda:0')
+Best F1 Score at epoch 0: 0.3221, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Epoch 0, Train Loss: 2.4182, Validation Loss: 2.2134, Validation F1: 0.3221
+Best F1 Score at epoch 1: 0.5147, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 2: 0.7371, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 3: 0.7881, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 7: 0.7906, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 8: 0.8051, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 9: 0.8259, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 10: 0.8490, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 12: 0.8494, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 13: 0.8598, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 14: 0.8682, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 15: 0.8712, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 21: 0.8718, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 22: 0.8757, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 23: 0.8786, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 39: 0.8809, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 43: 0.8809, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 48: 0.8825, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 59: 0.8835, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 63: 0.8840, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 64: 0.8851, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 75: 0.8865, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 84: 0.8873, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 93: 0.8874, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 95: 0.8878, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 96: 0.8879, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Fold 2
+Class weights: tensor([2.0303e+01, 2.3317e+01, 3.3214e+00, 1.2199e+00, 2.2403e+00, 2.5207e-01,
+        2.4480e-01, 3.8833e+00, 3.5957e+01, 3.1090e+02], device='cuda:0')
+Best F1 Score at epoch 0: 0.5906, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Epoch 0, Train Loss: 2.4275, Validation Loss: 2.2088, Validation F1: 0.5906
+Best F1 Score at epoch 1: 0.6880, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 3: 0.7352, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 4: 0.7557, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 5: 0.7640, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 6: 0.7821, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 7: 0.7995, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 10: 0.8227, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 12: 0.8345, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 14: 0.8405, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 15: 0.8541, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 18: 0.8669, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 21: 0.8735, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 27: 0.8742, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 29: 0.8780, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 31: 0.8809, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 32: 0.8812, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 38: 0.8830, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 52: 0.8847, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 62: 0.8849, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 68: 0.8862, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 78: 0.8865, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 86: 0.8884, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Fold 3
+Class weights: tensor([2.0289e+01, 2.3317e+01, 3.3214e+00, 1.2199e+00, 2.2401e+00, 2.5207e-01,
+        2.4480e-01, 3.8833e+00, 3.5957e+01, 3.1407e+02], device='cuda:0')
+Best F1 Score at epoch 0: 0.5603, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Epoch 0, Train Loss: 2.3751, Validation Loss: 2.2002, Validation F1: 0.5603
+Best F1 Score at epoch 1: 0.7247, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 2: 0.7616, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 3: 0.7790, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 4: 0.7815, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 6: 0.7832, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 7: 0.8003, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 9: 0.8183, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 11: 0.8310, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 13: 0.8498, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 16: 0.8600, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 17: 0.8638, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 19: 0.8673, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 20: 0.8704, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 21: 0.8722, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 22: 0.8731, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 23: 0.8738, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 24: 0.8756, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 26: 0.8772, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 28: 0.8789, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 35: 0.8830, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 36: 0.8838, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 67: 0.8840, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 68: 0.8859, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Best F1 Score at epoch 74: 0.8871, Parameters: lr=0.0005, hidden_dim256, drop_out=0.3
+Current Results:  {(0.2, 0.0005, 128): {'folds': [0.8848306437670744, 0.8846195701333323, 0.8855187321443875], 'avg_f1': 0.8849896486815981}, (0.3, 0.0005, 128): {'folds': [0.8840680382989046, 0.8838043291890669, 0.883767964926719], 'avg_f1': 0.8838801108048968}, (0.4, 0.0005, 128): {'folds': [0.8825877049288328, 0.8837779258594431, 0.8802541329714935], 'avg_f1': 0.8822065879199231}, (0.2, 0.0005, 256): {'folds': [0.8888746848400695, 0.8886817963664612, 0.8868714539367958], 'avg_f1': 0.8881426450477754}, (0.3, 0.0005, 256): {'folds': [0.8878510571095638, 0.8884353175779859, 0.887090307199621], 'avg_f1': 0.8877922272957236}}
+Average F1 Score for dropout 0.3 learning rate 0.0005, hidden_dim 256: 0.8878
+Testing with learning rate: 0.0005, hidden_dim: 256
+Fold 1
+Class weights: tensor([2.0289e+01, 2.3317e+01, 3.3217e+00, 1.2199e+00, 2.2403e+00, 2.5207e-01,
+        2.4480e-01, 3.8833e+00, 3.5957e+01, 3.1090e+02], device='cuda:0')
+Best F1 Score at epoch 0: 0.4915, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Epoch 0, Train Loss: 2.3599, Validation Loss: 2.1646, Validation F1: 0.4915
+Best F1 Score at epoch 1: 0.6422, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 2: 0.6773, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 3: 0.7560, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 4: 0.7777, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 9: 0.7798, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 11: 0.7972, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 12: 0.8093, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 13: 0.8336, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 14: 0.8391, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 16: 0.8589, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 18: 0.8624, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 19: 0.8658, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 21: 0.8674, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 22: 0.8674, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 25: 0.8718, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 26: 0.8746, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 28: 0.8781, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 38: 0.8795, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 40: 0.8814, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 51: 0.8846, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 52: 0.8848, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 59: 0.8849, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 72: 0.8864, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 73: 0.8864, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 74: 0.8864, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 95: 0.8870, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 97: 0.8891, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Fold 2
+Class weights: tensor([2.0303e+01, 2.3317e+01, 3.3214e+00, 1.2199e+00, 2.2403e+00, 2.5207e-01,
+        2.4480e-01, 3.8833e+00, 3.5957e+01, 3.1090e+02], device='cuda:0')
+Best F1 Score at epoch 0: 0.4535, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Epoch 0, Train Loss: 2.3686, Validation Loss: 2.2120, Validation F1: 0.4535
+Best F1 Score at epoch 1: 0.6405, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 2: 0.6635, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 3: 0.7259, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 4: 0.7377, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 5: 0.7511, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 6: 0.7516, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 7: 0.7555, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 8: 0.7624, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 10: 0.7818, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 12: 0.7949, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 13: 0.7992, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 14: 0.8284, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 15: 0.8333, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 16: 0.8545, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 17: 0.8555, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 18: 0.8591, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 19: 0.8623, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 20: 0.8693, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 21: 0.8712, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 28: 0.8751, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 29: 0.8769, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 34: 0.8791, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 35: 0.8801, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 36: 0.8827, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 47: 0.8829, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 61: 0.8829, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 62: 0.8839, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 63: 0.8861, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 93: 0.8876, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Fold 3
+Class weights: tensor([2.0289e+01, 2.3317e+01, 3.3214e+00, 1.2199e+00, 2.2401e+00, 2.5207e-01,
+        2.4480e-01, 3.8833e+00, 3.5957e+01, 3.1407e+02], device='cuda:0')
+Best F1 Score at epoch 0: 0.3756, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Epoch 0, Train Loss: 2.3225, Validation Loss: 2.1880, Validation F1: 0.3756
+Best F1 Score at epoch 1: 0.6926, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 2: 0.7188, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 3: 0.7682, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 5: 0.7787, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 6: 0.7837, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 9: 0.8065, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 13: 0.8264, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 14: 0.8305, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 17: 0.8481, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 18: 0.8481, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 19: 0.8630, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 24: 0.8706, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 27: 0.8732, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 36: 0.8733, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 39: 0.8790, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 43: 0.8802, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 58: 0.8814, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 69: 0.8815, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 78: 0.8833, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 87: 0.8847, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 96: 0.8852, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Best F1 Score at epoch 97: 0.8855, Parameters: lr=0.0005, hidden_dim256, drop_out=0.4
+Current Results:  {(0.2, 0.0005, 128): {'folds': [0.8848306437670744, 0.8846195701333323, 0.8855187321443875], 'avg_f1': 0.8849896486815981}, (0.3, 0.0005, 128): {'folds': [0.8840680382989046, 0.8838043291890669, 0.883767964926719], 'avg_f1': 0.8838801108048968}, (0.4, 0.0005, 128): {'folds': [0.8825877049288328, 0.8837779258594431, 0.8802541329714935], 'avg_f1': 0.8822065879199231}, (0.2, 0.0005, 256): {'folds': [0.8888746848400695, 0.8886817963664612, 0.8868714539367958], 'avg_f1': 0.8881426450477754}, (0.3, 0.0005, 256): {'folds': [0.8878510571095638, 0.8884353175779859, 0.887090307199621], 'avg_f1': 0.8877922272957236}, (0.4, 0.0005, 256): {'folds': [0.8891367497550894, 0.8875781566251034, 0.8854534887630489], 'avg_f1': 0.8873894650477472}}
+Average F1 Score for dropout 0.4 learning rate 0.0005, hidden_dim 256: 0.8874
+Testing with learning rate: 0.0005, hidden_dim: 512
+Fold 1
+Class weights: tensor([2.0289e+01, 2.3317e+01, 3.3217e+00, 1.2199e+00, 2.2403e+00, 2.5207e-01,
+        2.4480e-01, 3.8833e+00, 3.5957e+01, 3.1090e+02], device='cuda:0')
+Best F1 Score at epoch 0: 0.6899, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Epoch 0, Train Loss: 2.3691, Validation Loss: 2.1196, Validation F1: 0.6899
+Best F1 Score at epoch 1: 0.7315, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 2: 0.7555, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 3: 0.7896, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 4: 0.8143, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 5: 0.8317, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 6: 0.8446, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 7: 0.8656, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 8: 0.8696, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 10: 0.8702, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 11: 0.8730, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 12: 0.8799, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 17: 0.8835, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 29: 0.8836, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 35: 0.8865, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 41: 0.8869, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 47: 0.8869, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 48: 0.8886, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 60: 0.8894, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 73: 0.8897, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Fold 2
+Class weights: tensor([2.0303e+01, 2.3317e+01, 3.3214e+00, 1.2199e+00, 2.2403e+00, 2.5207e-01,
+        2.4480e-01, 3.8833e+00, 3.5957e+01, 3.1090e+02], device='cuda:0')
+Best F1 Score at epoch 0: 0.7379, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Epoch 0, Train Loss: 2.3650, Validation Loss: 2.0622, Validation F1: 0.7379
+Best F1 Score at epoch 1: 0.7637, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 2: 0.7919, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 3: 0.8007, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 4: 0.8193, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 5: 0.8309, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 6: 0.8410, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 7: 0.8536, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 8: 0.8698, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 10: 0.8705, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 12: 0.8765, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 13: 0.8773, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 16: 0.8780, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 18: 0.8795, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 19: 0.8812, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 24: 0.8820, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 33: 0.8821, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 34: 0.8846, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 37: 0.8847, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 38: 0.8857, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 40: 0.8859, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 47: 0.8870, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 51: 0.8881, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 61: 0.8900, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 70: 0.8901, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 76: 0.8901, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 87: 0.8903, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Fold 3
+Class weights: tensor([2.0289e+01, 2.3317e+01, 3.3214e+00, 1.2199e+00, 2.2401e+00, 2.5207e-01,
+        2.4480e-01, 3.8833e+00, 3.5957e+01, 3.1407e+02], device='cuda:0')
+Best F1 Score at epoch 0: 0.5004, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Epoch 0, Train Loss: 2.3549, Validation Loss: 2.0859, Validation F1: 0.5004
+Best F1 Score at epoch 1: 0.7604, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 2: 0.7773, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 5: 0.8001, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 6: 0.8362, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 7: 0.8497, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 8: 0.8644, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 9: 0.8683, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 14: 0.8746, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 20: 0.8822, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 26: 0.8823, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 32: 0.8850, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 51: 0.8866, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 69: 0.8874, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 78: 0.8878, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 85: 0.8882, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 88: 0.8891, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Best F1 Score at epoch 98: 0.8895, Parameters: lr=0.0005, hidden_dim512, drop_out=0.2
+Current Results:  {(0.2, 0.0005, 128): {'folds': [0.8848306437670744, 0.8846195701333323, 0.8855187321443875], 'avg_f1': 0.8849896486815981}, (0.3, 0.0005, 128): {'folds': [0.8840680382989046, 0.8838043291890669, 0.883767964926719], 'avg_f1': 0.8838801108048968}, (0.4, 0.0005, 128): {'folds': [0.8825877049288328, 0.8837779258594431, 0.8802541329714935], 'avg_f1': 0.8822065879199231}, (0.2, 0.0005, 256): {'folds': [0.8888746848400695, 0.8886817963664612, 0.8868714539367958], 'avg_f1': 0.8881426450477754}, (0.3, 0.0005, 256): {'folds': [0.8878510571095638, 0.8884353175779859, 0.887090307199621], 'avg_f1': 0.8877922272957236}, (0.4, 0.0005, 256): {'folds': [0.8891367497550894, 0.8875781566251034, 0.8854534887630489], 'avg_f1': 0.8873894650477472}, (0.2, 0.0005, 512): {'folds': [0.8896743718636538, 0.8903419710609674, 0.8895407828019174], 'avg_f1': 0.8898523752421795}}
+Average F1 Score for dropout 0.2 learning rate 0.0005, hidden_dim 512: 0.8899
+Testing with learning rate: 0.0005, hidden_dim: 512
+Fold 1
+Class weights: tensor([2.0289e+01, 2.3317e+01, 3.3217e+00, 1.2199e+00, 2.2403e+00, 2.5207e-01,
+        2.4480e-01, 3.8833e+00, 3.5957e+01, 3.1090e+02], device='cuda:0')
+Best F1 Score at epoch 0: 0.6345, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Epoch 0, Train Loss: 2.4373, Validation Loss: 2.1249, Validation F1: 0.6345
+Best F1 Score at epoch 1: 0.6863, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 2: 0.7286, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 3: 0.7552, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 4: 0.8080, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 6: 0.8272, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 7: 0.8424, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 9: 0.8549, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 10: 0.8661, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 11: 0.8675, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 13: 0.8690, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 14: 0.8728, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 15: 0.8743, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 16: 0.8761, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 20: 0.8791, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 22: 0.8794, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 25: 0.8803, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 31: 0.8820, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 32: 0.8845, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 47: 0.8851, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 48: 0.8859, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 54: 0.8878, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 60: 0.8885, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 68: 0.8919, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Fold 2
+Class weights: tensor([2.0303e+01, 2.3317e+01, 3.3214e+00, 1.2199e+00, 2.2403e+00, 2.5207e-01,
+        2.4480e-01, 3.8833e+00, 3.5957e+01, 3.1090e+02], device='cuda:0')
+Best F1 Score at epoch 0: 0.7343, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Epoch 0, Train Loss: 2.4013, Validation Loss: 2.1159, Validation F1: 0.7343
+Best F1 Score at epoch 1: 0.7489, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 2: 0.8022, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 3: 0.8233, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 5: 0.8233, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 6: 0.8296, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 7: 0.8467, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 8: 0.8616, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 9: 0.8749, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 16: 0.8768, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 22: 0.8783, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 23: 0.8816, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 27: 0.8824, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 28: 0.8828, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 36: 0.8863, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 52: 0.8879, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 64: 0.8885, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 65: 0.8887, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 72: 0.8899, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 73: 0.8903, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Fold 3
+Class weights: tensor([2.0289e+01, 2.3317e+01, 3.3214e+00, 1.2199e+00, 2.2401e+00, 2.5207e-01,
+        2.4480e-01, 3.8833e+00, 3.5957e+01, 3.1407e+02], device='cuda:0')
+Best F1 Score at epoch 0: 0.6075, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Epoch 0, Train Loss: 2.3892, Validation Loss: 2.1092, Validation F1: 0.6075
+Best F1 Score at epoch 1: 0.7291, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 2: 0.7528, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 3: 0.7871, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 6: 0.8271, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 7: 0.8431, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 8: 0.8631, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 11: 0.8675, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 12: 0.8685, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 13: 0.8772, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 14: 0.8781, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 19: 0.8807, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 26: 0.8880, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Best F1 Score at epoch 97: 0.8882, Parameters: lr=0.0005, hidden_dim512, drop_out=0.3
+Current Results:  {(0.2, 0.0005, 128): {'folds': [0.8848306437670744, 0.8846195701333323, 0.8855187321443875], 'avg_f1': 0.8849896486815981}, (0.3, 0.0005, 128): {'folds': [0.8840680382989046, 0.8838043291890669, 0.883767964926719], 'avg_f1': 0.8838801108048968}, (0.4, 0.0005, 128): {'folds': [0.8825877049288328, 0.8837779258594431, 0.8802541329714935], 'avg_f1': 0.8822065879199231}, (0.2, 0.0005, 256): {'folds': [0.8888746848400695, 0.8886817963664612, 0.8868714539367958], 'avg_f1': 0.8881426450477754}, (0.3, 0.0005, 256): {'folds': [0.8878510571095638, 0.8884353175779859, 0.887090307199621], 'avg_f1': 0.8877922272957236}, (0.4, 0.0005, 256): {'folds': [0.8891367497550894, 0.8875781566251034, 0.8854534887630489], 'avg_f1': 0.8873894650477472}, (0.2, 0.0005, 512): {'folds': [0.8896743718636538, 0.8903419710609674, 0.8895407828019174], 'avg_f1': 0.8898523752421795}, (0.3, 0.0005, 512): {'folds': [0.8919188465406471, 0.8902836950411127, 0.8882183960349204], 'avg_f1': 0.8901403125388935}}
+Average F1 Score for dropout 0.3 learning rate 0.0005, hidden_dim 512: 0.8901
+Testing with learning rate: 0.0005, hidden_dim: 512
+Fold 1
+Class weights: tensor([2.0289e+01, 2.3317e+01, 3.3217e+00, 1.2199e+00, 2.2403e+00, 2.5207e-01,
+        2.4480e-01, 3.8833e+00, 3.5957e+01, 3.1090e+02], device='cuda:0')
+Best F1 Score at epoch 0: 0.6818, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Epoch 0, Train Loss: 2.4042, Validation Loss: 2.1390, Validation F1: 0.6818
+Best F1 Score at epoch 1: 0.7476, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 2: 0.7930, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 4: 0.7965, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 7: 0.8040, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 8: 0.8244, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 9: 0.8477, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 10: 0.8556, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 11: 0.8576, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 12: 0.8687, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 13: 0.8752, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 14: 0.8784, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 19: 0.8814, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 27: 0.8824, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 28: 0.8834, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 49: 0.8867, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 50: 0.8905, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Fold 2
+Class weights: tensor([2.0303e+01, 2.3317e+01, 3.3214e+00, 1.2199e+00, 2.2403e+00, 2.5207e-01,
+        2.4480e-01, 3.8833e+00, 3.5957e+01, 3.1090e+02], device='cuda:0')
+Best F1 Score at epoch 0: 0.6935, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Epoch 0, Train Loss: 2.4152, Validation Loss: 2.1467, Validation F1: 0.6935
+Best F1 Score at epoch 1: 0.7333, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 2: 0.7437, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 3: 0.7469, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 4: 0.7489, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 5: 0.7727, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 6: 0.8126, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 7: 0.8197, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 8: 0.8444, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 9: 0.8524, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 10: 0.8597, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 11: 0.8687, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 12: 0.8728, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 19: 0.8737, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 20: 0.8773, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 24: 0.8773, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 25: 0.8797, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 26: 0.8816, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 27: 0.8819, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 28: 0.8848, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 38: 0.8857, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 50: 0.8874, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 74: 0.8890, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 91: 0.8902, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 98: 0.8908, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Fold 3
+Class weights: tensor([2.0289e+01, 2.3317e+01, 3.3214e+00, 1.2199e+00, 2.2401e+00, 2.5207e-01,
+        2.4480e-01, 3.8833e+00, 3.5957e+01, 3.1407e+02], device='cuda:0')
+Best F1 Score at epoch 0: 0.5843, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Epoch 0, Train Loss: 2.4463, Validation Loss: 2.1400, Validation F1: 0.5843
+Best F1 Score at epoch 1: 0.6990, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 2: 0.7417, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 3: 0.7611, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 4: 0.8039, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 5: 0.8274, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 7: 0.8365, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 8: 0.8458, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 9: 0.8668, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 11: 0.8678, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 16: 0.8721, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 17: 0.8811, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 18: 0.8853, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 54: 0.8856, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 68: 0.8858, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 75: 0.8874, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 76: 0.8884, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 92: 0.8884, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Best F1 Score at epoch 97: 0.8888, Parameters: lr=0.0005, hidden_dim512, drop_out=0.4
+Current Results:  {(0.2, 0.0005, 128): {'folds': [0.8848306437670744, 0.8846195701333323, 0.8855187321443875], 'avg_f1': 0.8849896486815981}, (0.3, 0.0005, 128): {'folds': [0.8840680382989046, 0.8838043291890669, 0.883767964926719], 'avg_f1': 0.8838801108048968}, (0.4, 0.0005, 128): {'folds': [0.8825877049288328, 0.8837779258594431, 0.8802541329714935], 'avg_f1': 0.8822065879199231}, (0.2, 0.0005, 256): {'folds': [0.8888746848400695, 0.8886817963664612, 0.8868714539367958], 'avg_f1': 0.8881426450477754}, (0.3, 0.0005, 256): {'folds': [0.8878510571095638, 0.8884353175779859, 0.887090307199621], 'avg_f1': 0.8877922272957236}, (0.4, 0.0005, 256): {'folds': [0.8891367497550894, 0.8875781566251034, 0.8854534887630489], 'avg_f1': 0.8873894650477472}, (0.2, 0.0005, 512): {'folds': [0.8896743718636538, 0.8903419710609674, 0.8895407828019174], 'avg_f1': 0.8898523752421795}, (0.3, 0.0005, 512): {'folds': [0.8919188465406471, 0.8902836950411127, 0.8882183960349204], 'avg_f1': 0.8901403125388935}, (0.4, 0.0005, 512): {'folds': [0.8905191604941721, 0.8908145373222903, 0.8887557378994857], 'avg_f1': 0.890029811905316}}
+Average F1 Score for dropout 0.4 learning rate 0.0005, hidden_dim 512: 0.8900
+Best Parameters: {'learning_rate': 0.0005, 'hidden_dim': 512, 'drop_out': 0.3}, Best F1 Score: 0.8901
+All results: {(0.2, 0.0005, 128): {'folds': [0.8848306437670744, 0.8846195701333323, 0.8855187321443875], 'avg_f1': 0.8849896486815981}, (0.3, 0.0005, 128): {'folds': [0.8840680382989046, 0.8838043291890669, 0.883767964926719], 'avg_f1': 0.8838801108048968}, (0.4, 0.0005, 128): {'folds': [0.8825877049288328, 0.8837779258594431, 0.8802541329714935], 'avg_f1': 0.8822065879199231}, (0.2, 0.0005, 256): {'folds': [0.8888746848400695, 0.8886817963664612, 0.8868714539367958], 'avg_f1': 0.8881426450477754}, (0.3, 0.0005, 256): {'folds': [0.8878510571095638, 0.8884353175779859, 0.887090307199621], 'avg_f1': 0.8877922272957236}, (0.4, 0.0005, 256): {'folds': [0.8891367497550894, 0.8875781566251034, 0.8854534887630489], 'avg_f1': 0.8873894650477472}, (0.2, 0.0005, 512): {'folds': [0.8896743718636538, 0.8903419710609674, 0.8895407828019174], 'avg_f1': 0.8898523752421795}, (0.3, 0.0005, 512): {'folds': [0.8919188465406471, 0.8902836950411127, 0.8882183960349204], 'avg_f1': 0.8901403125388935}, (0.4, 0.0005, 512): {'folds': [0.8905191604941721, 0.8908145373222903, 0.8887557378994857], 'avg_f1': 0.890029811905316}}
+
+
+
+
 Current Results:  {(0.2, 0.001, 128): {'folds': [0.8968577463399633, 0.896690711626011, 0.883092822622029], 'avg_f1': 0.8922137601960012}, (0.3, 0.001, 128): {'folds': [0.8935392772988573, 0.8960971348851793, 0.89402113096031], 'avg_f1': 0.8945525143814489}, (0.4, 0.001, 128): {'folds': [0.8947100126121516, 0.8938211975802075, 0.8891981714079995], 'avg_f1': 0.8925764605334529}, (0.2, 0.001, 256): {'folds': [0.8975156615345858, 0.9004451313550933, 0.8988609048239212], 'avg_f1': 0.8989405659045335}, (0.3, 0.001, 256): {'folds': [0.899002759525854, 0.8979973640597733, 0.8958958320097248], 'avg_f1': 0.8976319851984508}, (0.4, 0.001, 256): {'folds': [0.8986179446832488, 0.8988391645264462, 0.8887698957447585], 'avg_f1': 0.8954090016514845}, (0.2, 0.001, 512): {'folds': [0.9012083527164816, 0.901601138458137, 0.900278072515808], 'avg_f1': 0.901029187896809}, (0.3, 0.001, 512): {'folds': [0.9012098941667989, 0.9010168659613965, 0.8992458571855055], 'avg_f1': 0.9004908724379003}, (0.4, 0.001, 512): {'folds': [0.8967264716041199, 0.9014811433148544, 0.8977838744014929], 'avg_f1': 0.898663829773489}, (0.2, 0.005, 128): {'folds': [0.9000229190092077, 0.9028692375146407, 0.8984341818917454], 'avg_f1': 0.9004421128051979}, (0.3, 0.005, 128): {'folds': [0.900711583801615, 0.9008924011989246, 0.8980807595670652], 'avg_f1': 0.8998949148558683}, (0.4, 0.005, 128): {'folds': [0.9005398194480148, 0.9017335169244084, 0.9009625626605935], 'avg_f1': 0.9010786330110055}, (0.2, 0.005, 256): {'folds': [0.9000729649186112, 0.9025434744752675, 0.9003099206637535], 'avg_f1': 0.9009754533525441}, (0.3, 0.005, 256): {'folds': [0.9020896436642751, 0.9028234855504793, 0.90060624023804], 'avg_f1': 0.9018397898175982}, (0.4, 0.005, 256): {'folds': [0.9014376803471746, 0.904616803291014, 0.9005072524234226], 'avg_f1': 0.9021872453538705}, (0.2, 0.005, 512): {'folds': [0.9024498384586813, 0.9031165373978257, 0.9006047543660932], 'avg_f1': 0.9020570434075333}, (0.3, 0.005, 512): {'folds': [0.8982955254854459, 0.9011110606276802, 0.9005931232288987], 'avg_f1': 0.8999999031140082}, (0.4, 0.005, 512): {'folds': [0.9006590700899209, 0.901347428500428, 0.9015984327762246], 'avg_f1': 0.9012016437888578}, (0.2, 0.01, 128): {'folds': [0.901870319191538, 0.9040393612174754, 0.8999763380225619], 'avg_f1': 0.9019620061438585}, (0.3, 0.01, 128): {'folds': [0.9027219629511057, 0.9034388144047479, 0.8999139256261134], 'avg_f1': 0.902024900993989}, (0.4, 0.01, 128): {'folds': [0.9030675210138166, 0.9024192664068831, 0.8999098590340374], 'avg_f1': 0.9017988821515791}, (0.2, 0.01, 256): {'folds': [0.9032519807412079, 0.9030196782539881, 0.9002162321565016], 'avg_f1': 0.9021626303838991}, (0.3, 0.01, 256): {'folds': [0.9015976286580346, 0.9020191847096248, 0.9032051447266346], 'avg_f1': 0.9022739860314314}, (0.4, 0.01, 256): {'folds': [0.9013818756127574, 0.9031789537606468, 0.9014197070694532], 'avg_f1': 0.9019935121476191}, (0.2, 0.01, 512): {'folds': [0.898467250384832, 0.9026611268936877, 0.9002020737204186], 'avg_f1': 0.9004434836663128}, (0.3, 0.01, 512): {'folds': [0.8934013528018699, 0.9026545352165455, 0.8988983049739071], 'avg_f1': 0.8983180643307742}, (0.4, 0.01, 512): {'folds': [0.9002786936879846, 0.9004407826705525, 0.9028687123820461], 'avg_f1': 0.9011960629135277}}
 Average F1 Score for dropout 0.4 learning rate 0.01, hidden_dim 512: 0.9012
 Best Parameters: {'learning_rate': 0.01, 'hidden_dim': 256, 'drop_out': 0.3}, Best F1 Score: 0.9023
 All results: {(0.2, 0.001, 128): {'folds': [0.8968577463399633, 0.896690711626011, 0.883092822622029], 'avg_f1': 0.8922137601960012}, (0.3, 0.001, 128): {'folds': [0.8935392772988573, 0.8960971348851793, 0.89402113096031], 'avg_f1': 0.8945525143814489}, (0.4, 0.001, 128): {'folds': [0.8947100126121516, 0.8938211975802075, 0.8891981714079995], 'avg_f1': 0.8925764605334529}, (0.2, 0.001, 256): {'folds': [0.8975156615345858, 0.9004451313550933, 0.8988609048239212], 'avg_f1': 0.8989405659045335}, (0.3, 0.001, 256): {'folds': [0.899002759525854, 0.8979973640597733, 0.8958958320097248], 'avg_f1': 0.8976319851984508}, (0.4, 0.001, 256): {'folds': [0.8986179446832488, 0.8988391645264462, 0.8887698957447585], 'avg_f1': 0.8954090016514845}, (0.2, 0.001, 512): {'folds': [0.9012083527164816, 0.901601138458137, 0.900278072515808], 'avg_f1': 0.901029187896809}, (0.3, 0.001, 512): {'folds': [0.9012098941667989, 0.9010168659613965, 0.8992458571855055], 'avg_f1': 0.9004908724379003}, (0.4, 0.001, 512): {'folds': [0.8967264716041199, 0.9014811433148544, 0.8977838744014929], 'avg_f1': 0.898663829773489}, (0.2, 0.005, 128): {'folds': [0.9000229190092077, 0.9028692375146407, 0.8984341818917454], 'avg_f1': 0.9004421128051979}, (0.3, 0.005, 128): {'folds': [0.900711583801615, 0.9008924011989246, 0.8980807595670652], 'avg_f1': 0.8998949148558683}, (0.4, 0.005, 128): {'folds': [0.9005398194480148, 0.9017335169244084, 0.9009625626605935], 'avg_f1': 0.9010786330110055}, (0.2, 0.005, 256): {'folds': [0.9000729649186112, 0.9025434744752675, 0.9003099206637535], 'avg_f1': 0.9009754533525441}, (0.3, 0.005, 256): {'folds': [0.9020896436642751, 0.9028234855504793, 0.90060624023804], 'avg_f1': 0.9018397898175982}, (0.4, 0.005, 256): {'folds': [0.9014376803471746, 0.904616803291014, 0.9005072524234226], 'avg_f1': 0.9021872453538705}, (0.2, 0.005, 512): {'folds': [0.9024498384586813, 0.9031165373978257, 0.9006047543660932], 'avg_f1': 0.9020570434075333}, (0.3, 0.005, 512): {'folds': [0.8982955254854459, 0.9011110606276802, 0.9005931232288987], 'avg_f1': 0.8999999031140082}, (0.4, 0.005, 512): {'folds': [0.9006590700899209, 0.901347428500428, 0.9015984327762246], 'avg_f1': 0.9012016437888578}, (0.2, 0.01, 128): {'folds': [0.901870319191538, 0.9040393612174754, 0.8999763380225619], 'avg_f1': 0.9019620061438585}, (0.3, 0.01, 128): {'folds': [0.9027219629511057, 0.9034388144047479, 0.8999139256261134], 'avg_f1': 0.902024900993989}, (0.4, 0.01, 128): {'folds': [0.9030675210138166, 0.9024192664068831, 0.8999098590340374], 'avg_f1': 0.9017988821515791}, (0.2, 0.01, 256): {'folds': [0.9032519807412079, 0.9030196782539881, 0.9002162321565016], 'avg_f1': 0.9021626303838991}, (0.3, 0.01, 256): {'folds': [0.9015976286580346, 0.9020191847096248, 0.9032051447266346], 'avg_f1': 0.9022739860314314}, (0.4, 0.01, 256): {'folds': [0.9013818756127574, 0.9031789537606468, 0.9014197070694532], 'avg_f1': 0.9019935121476191}, (0.2, 0.01, 512): {'folds': [0.898467250384832, 0.9026611268936877, 0.9002020737204186], 'avg_f1': 0.9004434836663128}, (0.3, 0.01, 512): {'folds': [0.8934013528018699, 0.9026545352165455, 0.8988983049739071], 'avg_f1': 0.8983180643307742}, (0.4, 0.01, 512): {'folds': [0.9002786936879846, 0.9004407826705525, 0.9028687123820461], 'avg_f1': 0.9011960629135277}}
+
