@@ -48,7 +48,7 @@ csv_file_name = "all_downsampled"
 data = pd.read_csv(os.path.join(project_root, "Datasets", f"UNSW_NB15/All/{csv_file_name}.csv"))
 
 DATASET_NAME = "UNSW_NB15"
-EXPERIMENT_NAME = "whole_graph_combined_ports_final"
+EXPERIMENT_NAME = "whole_graph_combined_ports"
 
 SOURCE_IP_COL_NAME = UNSW_NB15_Config.SOURCE_IP_COL_NAME
 DESTINATION_IP_COL_NAME = UNSW_NB15_Config.DESTINATION_IP_COL_NAME
@@ -79,7 +79,7 @@ saves_path = os.path.join(project_root, "Models/E_GraphSAGE/logs", DATASET_NAME,
 checkpoint_path = os.path.join(saves_path, f"checkpoints_{csv_file_name}.pth")
 best_model_path = os.path.join(saves_path, f"best_model_{csv_file_name}.pth")
 
-os.makedirs(os.path.dirname(saves_path), exist_ok=True)
+os.makedirs(saves_path, exist_ok=True)
 
 # %%
 data.drop(columns=UNSW_NB15_Config.DROP_COLS,inplace=True)
@@ -338,6 +338,7 @@ def grid_search(data, epochs, learning_rates, hidden_dims, drop_outs):
 
                     criterion = nn.CrossEntropyLoss(weight=class_weights)
                     optimizer = th.optim.Adam(model.parameters(), lr=lr)
+                    scheduler = th.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=epochs, eta_min=1e-6)
 
                     best_epoch_f1 = 0  # Track the best F1 score for this fold
 
@@ -355,6 +356,7 @@ def grid_search(data, epochs, learning_rates, hidden_dims, drop_outs):
 
                             loss.backward()
                             optimizer.step()
+                            scheduler.step()
 
                             model.eval()
                             with th.no_grad():
@@ -394,7 +396,7 @@ learning_rates = [0.001, 0.005, 0.01]
 hidden_dims = [128, 256, 512]
 drop_outs = [0.2, 0.3, 0.4]
 
-grid_search(train_full_df, epochs=100, learning_rates=learning_rates, hidden_dims=hidden_dims, drop_outs=drop_outs)
+grid_search(train_full_df, epochs=500, learning_rates=learning_rates, hidden_dims=hidden_dims, drop_outs=drop_outs)
 
 
 # %%
@@ -411,8 +413,9 @@ import pickle
 
 # Extract the best parameters from the grid search
 best_hidden_dim = 256  # Replace with the best hidden_dim found
-best_learning_rate = 0.001  # Replace with the best learning_rate found
+best_learning_rate = 0.005  # Replace with the best learning_rate found
 best_dropout = 0.3  # Replace with the best dropout found
+epochs = 5000
 
 # Initialize the model with the best parameters
 model = EGraphSAGE(node_in_channels=G_pyg_train.num_node_features,
@@ -436,6 +439,7 @@ print("Class weights:", class_weights)
 # Define the loss function and optimizer
 criterion = nn.CrossEntropyLoss(weight=class_weights)
 optimizer = th.optim.Adam(model.parameters(), lr=best_learning_rate)
+scheduler = th.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=epochs, eta_min=1e-6)
 
 # Move the graph data to the device
 G_pyg_train = G_pyg_train.to(device)
@@ -450,7 +454,6 @@ G_pyg_val.edge_attr = G_pyg_val.edge_attr.to(device)
 # ===== Load checkpoint if exists =====
 best_f1 = 0
 start_epoch = 0
-epochs = 5000
 
 if os.path.exists(checkpoint_path):
     checkpoint = th.load(checkpoint_path)
@@ -494,6 +497,7 @@ for epoch in range(start_epoch, epochs):
 
     loss.backward()
     optimizer.step()
+    scheduler.step()
 
     model.eval()
     with th.no_grad():
@@ -529,7 +533,7 @@ for epoch in range(start_epoch, epochs):
         print(f"Epoch {epoch} Saved best model. Best F1:", best_f1)
         saved_model_epochs.append(epoch)
 
-    if epoch % 1 == 0:
+    if epoch % 10 == 0:
         print(f'Epoch {epoch}, Train Loss: {train_loss:.4f}, Validation Loss: {val_loss:.4f}, Validation F1: {val_f1:.4f}')
 
     train_loss_history.append(train_loss)
@@ -577,7 +581,7 @@ def plot_training_process(train_losses, val_losses, val_f1, saved_model_epochs):
     plt.show()
 
 # %%
-plot_training_process(train_loss_history, val_loss_history, val_f1_history, [])
+plot_training_process(train_loss_history[:2000], val_loss_history[:2000], val_f1_history[:2000], [])
 
 # %%
 G_nx_test, G_pyg_test = create_graph(test_df, SOURCE_IP_COL_NAME, DESTINATION_IP_COL_NAME, ['h', label_col], create_using=nx.MultiDiGraph())
