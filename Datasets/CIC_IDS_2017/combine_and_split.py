@@ -28,11 +28,11 @@ df_list = []
 for i, file in enumerate(all_files):
     try:
         df = pd.read_csv(file, header=0, encoding='cp1252')
+        df.columns = df.columns.str.strip()
 
         assert SOURCE_IP_COL_NAME in df.columns, f"{SOURCE_IP_COL_NAME} not found in {file}"
         assert DESTINATION_IP_COL_NAME in df.columns, f"{DESTINATION_IP_COL_NAME} not found in {file}"
 
-        df.columns = df.columns.str.strip()
         if SOURCE_IP_COL_NAME in df.columns:
             df[SOURCE_IP_COL_NAME] = df[SOURCE_IP_COL_NAME].astype(str).apply(lambda x: f"{x}_{i}")
         if DESTINATION_IP_COL_NAME in df.columns:
@@ -78,6 +78,8 @@ downsampled_normal_df = normal_traffic_df.sample(frac=0.1, random_state=42)
 downsampled_df = pd.concat([downsampled_normal_df, df_full[df_full[CIC_IDS_2017_Config.ATTACK_CLASS_COL_NAME] != CIC_IDS_2017_Config.BENIGN_CLASS_NAME]])
 
 downsampled_df.to_csv(output_all_downsampled_path, index=False, header=True)
+
+exit()
 
 # ==== Optional Preprocessing START ====
 downsampled_preprocessed = downsampled_df.drop(columns=CIC_IDS_2017_Config.DROP_COLS)

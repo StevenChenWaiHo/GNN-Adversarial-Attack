@@ -17,7 +17,7 @@ class CIC_IDS_2017_Config:
 
     SOURCE_FILE_ID_COL_NAME = "source_file_id"
 
-    col_names = [
+    COL_NAMES = [
         "Flow ID", "Source IP", "Source Port", "Destination IP", "Destination Port", "Protocol", "Timestamp", "Flow Duration", 
         "Total Fwd Packets", "Total Backward Packets", "Total Length of Fwd Packets", "Total Length of Bwd Packets", 
         "Fwd Packet Length Max", "Fwd Packet Length Min", "Fwd Packet Length Mean", "Fwd Packet Length Std", 
@@ -69,4 +69,4 @@ class CIC_IDS_2017_Config:
         "Bwd IAT Min", "Packet Length Std",
     ]
 
-    assert (set(COLS_TO_NORM) | set(CATEGORICAL_COLS)).issubset(set(col_names) - set(DROP_COLS)), f"Some columns are not in the right place. Please check the column names in {DATASET_NAME}_config.py ."
+    assert (set(COLS_TO_NORM) | set(CATEGORICAL_COLS)).issubset(set(COL_NAMES) - set(DROP_COLS)), f"Some columns are not in the right place. Please check the column names in {DATASET_NAME}_config.py ."
