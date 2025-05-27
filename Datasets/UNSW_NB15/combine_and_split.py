@@ -52,9 +52,6 @@ for i, file in enumerate(all_files):
         assert SOURCE_PORT_COL_NAME in df.columns, f"{SOURCE_PORT_COL_NAME} not found in {file}"
         assert DESTINATION_PORT_COL_NAME in df.columns, f"{DESTINATION_PORT_COL_NAME} not found in {file}"
 
-        df[SOURCE_IP_COL_NAME] = df[SOURCE_IP_COL_NAME].astype(str).apply(lambda x: f"{x}_{i}")
-        df[DESTINATION_IP_COL_NAME] = df[DESTINATION_IP_COL_NAME].astype(str).apply(lambda x: f"{x}_{i}")
-
         df[SOURCE_PORT_COL_NAME] = df[SOURCE_PORT_COL_NAME].astype(str).apply(parse_port)
         df[DESTINATION_PORT_COL_NAME] = df[DESTINATION_PORT_COL_NAME].astype(str).apply(parse_port)
         
