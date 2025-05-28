@@ -3,3 +3,5 @@ __pycache__/
 **/lib/
 **/*.zip
 **/extracted_zip/
+**/Raw/
+**/saved_graphs/

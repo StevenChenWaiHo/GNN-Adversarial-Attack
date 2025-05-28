@@ -1,0 +1,542 @@
+Testing with learning rate: 0.001, hidden_dim: 128, drop_out: 0.2
+Fold 1
+Class weights: tensor([3.8121e-01, 4.4458e-01, 1.9641e+03, 7.8879e+00, 6.7127e+03],
+       device='cuda:0')
+                                                              
+Epoch 1/200, Train Loss: 0.0717, Val Loss: 8.1863, Val F1 (weighted): 0.3623, Micro: 0.5257, Macro: 0.1917 (Best Weighted F1 so far: 0.3623)
+                                                               
+Epoch 2/200, Train Loss: 0.0710, Val Loss: 10.4915, Val F1 (weighted): 0.3673, Micro: 0.5281, Macro: 0.2739 (Best Weighted F1 so far: 0.3673)
+                                                               
+Epoch 3/200, Train Loss: 0.0626, Val Loss: 6.8126, Val F1 (weighted): 0.3679, Micro: 0.5285, Macro: 0.3972 (Best Weighted F1 so far: 0.3679)
+                                                               
+Epoch 5/200, Train Loss: 0.0948, Val Loss: 7.2049, Val F1 (weighted): 0.3686, Micro: 0.5289, Macro: 0.3325 (Best Weighted F1 so far: 0.3686)
+                                                               
+Epoch 6/200, Train Loss: 0.0871, Val Loss: 11.7522, Val F1 (weighted): 0.3696, Micro: 0.5291, Macro: 0.3330 (Best Weighted F1 so far: 0.3696)
+                                                               
+Epoch 7/200, Train Loss: 0.0895, Val Loss: 7.3584, Val F1 (weighted): 0.3718, Micro: 0.5306, Macro: 0.3210 (Best Weighted F1 so far: 0.3718)
+                                                               
+Epoch 8/200, Train Loss: 0.0655, Val Loss: 7.5776, Val F1 (weighted): 0.3751, Micro: 0.5328, Macro: 0.3232 (Best Weighted F1 so far: 0.3751)
+                                                               
+Epoch 10/200, Train Loss: 0.0948, Val Loss: 6.9493, Val F1 (weighted): 0.3770, Micro: 0.5341, Macro: 0.3253 (Best Weighted F1 so far: 0.3770)
+                                                               
+Epoch 11/200, Train Loss: 0.1386, Val Loss: 7.1581, Val F1 (weighted): 0.3777, Micro: 0.5345, Macro: 0.3939 (Best Weighted F1 so far: 0.3777)
+                                                               
+Epoch 12/200, Train Loss: 0.0819, Val Loss: 4.8119, Val F1 (weighted): 0.3792, Micro: 0.5355, Macro: 0.4000 (Best Weighted F1 so far: 0.3792)
+                                                               
+Epoch 13/200, Train Loss: 0.1149, Val Loss: 3.3922, Val F1 (weighted): 0.3848, Micro: 0.5394, Macro: 0.4078 (Best Weighted F1 so far: 0.3848)
+                                                               
+Epoch 23/200, Train Loss: 0.0330, Val Loss: 3.0852, Val F1 (weighted): 0.3997, Micro: 0.5484, Macro: 0.4588 (Best Weighted F1 so far: 0.3997)
+                                                               
+Epoch 24/200, Train Loss: 0.0308, Val Loss: 2.0661, Val F1 (weighted): 0.5078, Micro: 0.6035, Macro: 0.5482 (Best Weighted F1 so far: 0.5078)
+                                                               
+Epoch 28/200, Train Loss: 0.0233, Val Loss: 1.4392, Val F1 (weighted): 0.6304, Micro: 0.6771, Macro: 0.5407 (Best Weighted F1 so far: 0.6304)
+                                                               
+Epoch 31/200, Train Loss: 0.0174, Val Loss: 1.1901, Val F1 (weighted): 0.7595, Micro: 0.7754, Macro: 0.6412 (Best Weighted F1 so far: 0.7595)
+                                                               
+Epoch 33/200, Train Loss: 0.0125, Val Loss: 0.8678, Val F1 (weighted): 0.8301, Micro: 0.8370, Macro: 0.6697 (Best Weighted F1 so far: 0.8301)
+                                                               
+Epoch 37/200, Train Loss: 0.0194, Val Loss: 0.6534, Val F1 (weighted): 0.8743, Micro: 0.8776, Macro: 0.6942 (Best Weighted F1 so far: 0.8743)
+                                                               
+Epoch 45/200, Train Loss: 0.0120, Val Loss: 0.7201, Val F1 (weighted): 0.8914, Micro: 0.8937, Macro: 0.7108 (Best Weighted F1 so far: 0.8914)
+                                                               
+Epoch 46/200, Train Loss: 0.0103, Val Loss: 0.7028, Val F1 (weighted): 0.8961, Micro: 0.8979, Macro: 0.7346 (Best Weighted F1 so far: 0.8961)
+                                                               
+Epoch 47/200, Train Loss: 0.0108, Val Loss: 0.7684, Val F1 (weighted): 0.8966, Micro: 0.8985, Macro: 0.7264 (Best Weighted F1 so far: 0.8966)
+
+🛑 Early stopping triggered at epoch 46.
+Fold 2
+Class weights: tensor([3.8133e-01, 4.4439e-01, 2.0408e+03, 7.8912e+00, 6.7165e+03],
+       device='cuda:0')
+                                                               
+Epoch 1/200, Train Loss: 0.0725, Val Loss: 7.9024, Val F1 (weighted): 0.3635, Micro: 0.5267, Macro: 0.2276 (Best Weighted F1 so far: 0.3635)
+                                                               
+Epoch 2/200, Train Loss: 0.0905, Val Loss: 7.2324, Val F1 (weighted): 0.3637, Micro: 0.5269, Macro: 0.3345 (Best Weighted F1 so far: 0.3637)
+                                                               
+Epoch 3/200, Train Loss: 0.1069, Val Loss: 6.4211, Val F1 (weighted): 0.3681, Micro: 0.5290, Macro: 0.3610 (Best Weighted F1 so far: 0.3681)
+                                                               
+Epoch 4/200, Train Loss: 0.0979, Val Loss: 9.5921, Val F1 (weighted): 0.3683, Micro: 0.5291, Macro: 0.3941 (Best Weighted F1 so far: 0.3683)
+                                                               
+Epoch 5/200, Train Loss: 0.0900, Val Loss: 7.9985, Val F1 (weighted): 0.3698, Micro: 0.5299, Macro: 0.4069 (Best Weighted F1 so far: 0.3698)
+                                                               
+Epoch 7/200, Train Loss: 0.0680, Val Loss: 13.3746, Val F1 (weighted): 0.3703, Micro: 0.5301, Macro: 0.4113 (Best Weighted F1 so far: 0.3703)
+                                                               
+Epoch 8/200, Train Loss: 0.0708, Val Loss: 8.4185, Val F1 (weighted): 0.3720, Micro: 0.5311, Macro: 0.3413 (Best Weighted F1 so far: 0.3720)
+                                                               
+Epoch 10/200, Train Loss: 0.1776, Val Loss: 6.3546, Val F1 (weighted): 0.3746, Micro: 0.5324, Macro: 0.3594 (Best Weighted F1 so far: 0.3746)
+                                                               
+Epoch 11/200, Train Loss: 0.0869, Val Loss: 8.0784, Val F1 (weighted): 0.3864, Micro: 0.5417, Macro: 0.3434 (Best Weighted F1 so far: 0.3864)
+                                                               
+Epoch 13/200, Train Loss: 0.0821, Val Loss: 3.1740, Val F1 (weighted): 0.4360, Micro: 0.5648, Macro: 0.4842 (Best Weighted F1 so far: 0.4360)
+                                                               
+Epoch 19/200, Train Loss: 0.0410, Val Loss: 3.2273, Val F1 (weighted): 0.6409, Micro: 0.6858, Macro: 0.5912 (Best Weighted F1 so far: 0.6409)
+                                                               
+Epoch 28/200, Train Loss: 0.0159, Val Loss: 2.9334, Val F1 (weighted): 0.7203, Micro: 0.7441, Macro: 0.6381 (Best Weighted F1 so far: 0.7203)
+                                                               
+Epoch 30/200, Train Loss: 0.0315, Val Loss: 3.4498, Val F1 (weighted): 0.7298, Micro: 0.7529, Macro: 0.6654 (Best Weighted F1 so far: 0.7298)
+                                                               
+Epoch 31/200, Train Loss: 0.0148, Val Loss: 2.9972, Val F1 (weighted): 0.8095, Micro: 0.8185, Macro: 0.6768 (Best Weighted F1 so far: 0.8095)
+                                                               
+Epoch 32/200, Train Loss: 0.0103, Val Loss: 2.8099, Val F1 (weighted): 0.8453, Micro: 0.8506, Macro: 0.6939 (Best Weighted F1 so far: 0.8453)
+                                                               
+Epoch 33/200, Train Loss: 0.0071, Val Loss: 2.7586, Val F1 (weighted): 0.8872, Micro: 0.8897, Macro: 0.7100 (Best Weighted F1 so far: 0.8872)
+
+🛑 Early stopping triggered at epoch 32.
+Fold 3
+Class weights: tensor([3.8121e-01, 4.4458e-01, 1.3703e+03, 7.9017e+00, 6.7127e+03],
+       device='cuda:0')
+                                                               
+Epoch 1/200, Train Loss: 0.0793, Val Loss: 6.3731, Val F1 (weighted): 0.3624, Micro: 0.5258, Macro: 0.4105 (Best Weighted F1 so far: 0.3624)
+                                                               
+Epoch 2/200, Train Loss: 0.1081, Val Loss: 7.0049, Val F1 (weighted): 0.3628, Micro: 0.5259, Macro: 0.4013 (Best Weighted F1 so far: 0.3628)
+                                                               
+Epoch 3/200, Train Loss: 0.0795, Val Loss: 8.0798, Val F1 (weighted): 0.3646, Micro: 0.5268, Macro: 0.4282 (Best Weighted F1 so far: 0.3646)
+                                                               
+Epoch 6/200, Train Loss: 0.0787, Val Loss: 10.6805, Val F1 (weighted): 0.3652, Micro: 0.5271, Macro: 0.4312 (Best Weighted F1 so far: 0.3652)
+                                                               
+Epoch 7/200, Train Loss: 0.0841, Val Loss: 12.3572, Val F1 (weighted): 0.3720, Micro: 0.5308, Macro: 0.4724 (Best Weighted F1 so far: 0.3720)
+                                                               
+Epoch 9/200, Train Loss: 0.0849, Val Loss: 3.9290, Val F1 (weighted): 0.4389, Micro: 0.5665, Macro: 0.4325 (Best Weighted F1 so far: 0.4389)
+                                                               
+Epoch 11/200, Train Loss: 0.0442, Val Loss: 2.8471, Val F1 (weighted): 0.4581, Micro: 0.5728, Macro: 0.4237 (Best Weighted F1 so far: 0.4581)
+                                                               
+Epoch 18/200, Train Loss: 0.1148, Val Loss: 4.7209, Val F1 (weighted): 0.4874, Micro: 0.5958, Macro: 0.4086 (Best Weighted F1 so far: 0.4874)
+                                                               
+Epoch 21/200, Train Loss: 0.0669, Val Loss: 1.8539, Val F1 (weighted): 0.4907, Micro: 0.5962, Macro: 0.5229 (Best Weighted F1 so far: 0.4907)
+                                                               
+Epoch 27/200, Train Loss: 0.0543, Val Loss: 1.7194, Val F1 (weighted): 0.6094, Micro: 0.6653, Macro: 0.5370 (Best Weighted F1 so far: 0.6094)
+                                                               
+Epoch 28/200, Train Loss: 0.0402, Val Loss: 1.3168, Val F1 (weighted): 0.7412, Micro: 0.7607, Macro: 0.6120 (Best Weighted F1 so far: 0.7412)
+                                                               
+Epoch 32/200, Train Loss: 0.0176, Val Loss: 0.8651, Val F1 (weighted): 0.8265, Micro: 0.8335, Macro: 0.6464 (Best Weighted F1 so far: 0.8265)
+                                                               
+Epoch 35/200, Train Loss: 0.0128, Val Loss: 0.9468, Val F1 (weighted): 0.8350, Micro: 0.8412, Macro: 0.6731 (Best Weighted F1 so far: 0.8350)
+                                                               
+Epoch 39/200, Train Loss: 0.0318, Val Loss: 0.5413, Val F1 (weighted): 0.8951, Micro: 0.8971, Macro: 0.6582 (Best Weighted F1 so far: 0.8951)
+                                                               
+Epoch 40/200, Train Loss: 0.0312, Val Loss: 0.4336, Val F1 (weighted): 0.9125, Micro: 0.9137, Macro: 0.6694 (Best Weighted F1 so far: 0.9125)
+                                                               
+Epoch 47/200, Train Loss: 0.0567, Val Loss: 0.3061, Val F1 (weighted): 0.9194, Micro: 0.9204, Macro: 0.7070 (Best Weighted F1 so far: 0.9194)
+                                                               
+Epoch 48/200, Train Loss: 0.0131, Val Loss: 0.2256, Val F1 (weighted): 0.9275, Micro: 0.9283, Macro: 0.7141 (Best Weighted F1 so far: 0.9275)
+                                                               
+Epoch 49/200, Train Loss: 0.0102, Val Loss: 0.1827, Val F1 (weighted): 0.9463, Micro: 0.9467, Macro: 0.7114 (Best Weighted F1 so far: 0.9463)
+                                                               
+Epoch 50/200, Train Loss: 0.0094, Val Loss: 0.1417, Val F1 (weighted): 0.9539, Micro: 0.9542, Macro: 0.7091 (Best Weighted F1 so far: 0.9539)
+                                                               
+Epoch 51/200, Train Loss: 0.0078, Val Loss: 0.1122, Val F1 (weighted): 0.9662, Micro: 0.9663, Macro: 0.7231 (Best Weighted F1 so far: 0.9662)
+                                                               
+Epoch 52/200, Train Loss: 0.0064, Val Loss: 0.1029, Val F1 (weighted): 0.9713, Micro: 0.9714, Macro: 0.7309 (Best Weighted F1 so far: 0.9713)
+                                                               
+Epoch 53/200, Train Loss: 0.0050, Val Loss: 0.0716, Val F1 (weighted): 0.9791, Micro: 0.9791, Macro: 0.7246 (Best Weighted F1 so far: 0.9791)
+                                                               
+Epoch 55/200, Train Loss: 0.0168, Val Loss: 0.0604, Val F1 (weighted): 0.9823, Micro: 0.9822, Macro: 0.7116 (Best Weighted F1 so far: 0.9823)
+                                                               
+Epoch 56/200, Train Loss: 0.0030, Val Loss: 0.0248, Val F1 (weighted): 0.9890, Micro: 0.9890, Macro: 0.7477 (Best Weighted F1 so far: 0.9890)
+                                                               
+Epoch 60/200, Train Loss: 0.0023, Val Loss: 0.0058, Val F1 (weighted): 0.9973, Micro: 0.9973, Macro: 0.7430 (Best Weighted F1 so far: 0.9973)
+                                                               
+Epoch 67/200, Train Loss: 0.0011, Val Loss: 0.0030, Val F1 (weighted): 0.9996, Micro: 0.9996, Macro: 0.7541 (Best Weighted F1 so far: 0.9996)
+                                                               
+Epoch 69/200, Train Loss: 0.0015, Val Loss: 0.0033, Val F1 (weighted): 0.9997, Micro: 0.9997, Macro: 0.7518 (Best Weighted F1 so far: 0.9997)
+                                                               
+Epoch 72/200, Train Loss: 0.0288, Val Loss: 0.0037, Val F1 (weighted): 0.9998, Micro: 0.9997, Macro: 0.7570 (Best Weighted F1 so far: 0.9998)
+                                                               
+Epoch 73/200, Train Loss: 0.0009, Val Loss: 0.0032, Val F1 (weighted): 0.9998, Micro: 0.9998, Macro: 0.7603 (Best Weighted F1 so far: 0.9998)
+                                                               
+Epoch 74/200, Train Loss: 0.0007, Val Loss: 0.0026, Val F1 (weighted): 0.9998, Micro: 0.9998, Macro: 0.7765 (Best Weighted F1 so far: 0.9998)
+                                                               
+Epoch 82/200, Train Loss: 0.0007, Val Loss: 0.0021, Val F1 (weighted): 0.9999, Micro: 0.9998, Macro: 0.7594 (Best Weighted F1 so far: 0.9999)
+                                                               
+Epoch 83/200, Train Loss: 0.0006, Val Loss: 0.0021, Val F1 (weighted): 0.9999, Micro: 0.9999, Macro: 0.7780 (Best Weighted F1 so far: 0.9999)
+                                                               
+Epoch 91/200, Train Loss: 0.0006, Val Loss: 0.0019, Val F1 (weighted): 0.9999, Micro: 0.9999, Macro: 0.7780 (Best Weighted F1 so far: 0.9999)
+                                                               
+Epoch 94/200, Train Loss: 0.0005, Val Loss: 0.0019, Val F1 (weighted): 0.9999, Micro: 0.9999, Macro: 0.7890 (Best Weighted F1 so far: 0.9999)
+                                                               
+Epoch 102/200, Train Loss: 0.0006, Val Loss: 0.0019, Val F1 (weighted): 0.9999, Micro: 0.9999, Macro: 0.7781 (Best Weighted F1 so far: 0.9999)
+                                                               
+Epoch 106/200, Train Loss: 0.0006, Val Loss: 0.0018, Val F1 (weighted): 0.9999, Micro: 0.9999, Macro: 0.7794 (Best Weighted F1 so far: 0.9999)
+                                                               
+Epoch 108/200, Train Loss: 0.0005, Val Loss: 0.0018, Val F1 (weighted): 0.9999, Micro: 0.9999, Macro: 0.7905 (Best Weighted F1 so far: 0.9999)
+                                                               
+
+🛑 Early stopping triggered at epoch 116.
+Average F1 Score for drop_out 0.2, learning rate 0.001, hidden_dim 128: 0.9279
+Testing with learning rate: 0.001, hidden_dim: 128, drop_out: 0.3
+Fold 1
+Class weights: tensor([3.8121e-01, 4.4458e-01, 1.9641e+03, 7.8879e+00, 6.7127e+03],
+       device='cuda:0')
+                                                               
+Epoch 1/200, Train Loss: 0.0805, Val Loss: 6.3809, Val F1 (weighted): 0.3628, Micro: 0.5260, Macro: 0.3491 (Best Weighted F1 so far: 0.3628)
+                                                               
+Epoch 2/200, Train Loss: 0.0744, Val Loss: 7.6952, Val F1 (weighted): 0.3674, Micro: 0.5282, Macro: 0.3049 (Best Weighted F1 so far: 0.3674)
+                                                               
+Epoch 3/200, Train Loss: 0.0761, Val Loss: 6.9674, Val F1 (weighted): 0.3678, Micro: 0.5284, Macro: 0.2947 (Best Weighted F1 so far: 0.3678)
+                                                               
+Epoch 6/200, Train Loss: 0.0768, Val Loss: 6.3919, Val F1 (weighted): 0.3743, Micro: 0.5323, Macro: 0.2832 (Best Weighted F1 so far: 0.3743)
+                                                               
+Epoch 9/200, Train Loss: 0.0840, Val Loss: 4.4419, Val F1 (weighted): 0.3828, Micro: 0.5375, Macro: 0.3805 (Best Weighted F1 so far: 0.3828)
+                                                               
+Epoch 14/200, Train Loss: 0.1004, Val Loss: 3.8870, Val F1 (weighted): 0.3833, Micro: 0.5391, Macro: 0.4316 (Best Weighted F1 so far: 0.3833)
+                                                               
+Epoch 19/200, Train Loss: 0.0531, Val Loss: 3.2379, Val F1 (weighted): 0.3842, Micro: 0.5399, Macro: 0.5449 (Best Weighted F1 so far: 0.3842)
+                                                               
+Epoch 20/200, Train Loss: 0.0423, Val Loss: 3.2177, Val F1 (weighted): 0.3936, Micro: 0.5460, Macro: 0.4914 (Best Weighted F1 so far: 0.3936)
+                                                               
+Epoch 22/200, Train Loss: 0.0294, Val Loss: 4.0476, Val F1 (weighted): 0.4075, Micro: 0.5515, Macro: 0.4677 (Best Weighted F1 so far: 0.4075)
+                                                               
+Epoch 25/200, Train Loss: 0.0705, Val Loss: 1.2761, Val F1 (weighted): 0.7031, Micro: 0.7305, Macro: 0.5702 (Best Weighted F1 so far: 0.7031)
+                                                               
+Epoch 35/200, Train Loss: 0.0374, Val Loss: 1.5034, Val F1 (weighted): 0.7341, Micro: 0.7552, Macro: 0.5126 (Best Weighted F1 so far: 0.7341)
+                                                               
+Epoch 38/200, Train Loss: 0.0449, Val Loss: 0.7879, Val F1 (weighted): 0.8805, Micro: 0.8831, Macro: 0.6405 (Best Weighted F1 so far: 0.8805)
+                                                               
+Epoch 41/200, Train Loss: 0.0203, Val Loss: 0.7181, Val F1 (weighted): 0.9073, Micro: 0.9087, Macro: 0.7493 (Best Weighted F1 so far: 0.9073)
+                                                               
+Epoch 42/200, Train Loss: 0.0105, Val Loss: 0.4558, Val F1 (weighted): 0.9415, Micro: 0.9419, Macro: 0.7578 (Best Weighted F1 so far: 0.9415)
+                                                               
+Epoch 47/200, Train Loss: 0.0645, Val Loss: 0.4102, Val F1 (weighted): 0.9579, Micro: 0.9580, Macro: 0.7660 (Best Weighted F1 so far: 0.9579)
+                                                               
+Epoch 51/200, Train Loss: 0.0207, Val Loss: 0.4702, Val F1 (weighted): 0.9619, Micro: 0.9620, Macro: 0.9597 (Best Weighted F1 so far: 0.9619)
+                                                               
+Epoch 52/200, Train Loss: 0.2149, Val Loss: 0.3910, Val F1 (weighted): 0.9736, Micro: 0.9737, Macro: 0.9370 (Best Weighted F1 so far: 0.9736)
+                                                               
+Epoch 60/200, Train Loss: 0.0063, Val Loss: 0.4277, Val F1 (weighted): 0.9969, Micro: 0.9969, Macro: 0.7839 (Best Weighted F1 so far: 0.9969)
+                                                               
+
+🛑 Early stopping triggered at epoch 61.
+Fold 2
+Class weights: tensor([3.8133e-01, 4.4439e-01, 2.0408e+03, 7.8912e+00, 6.7165e+03],
+       device='cuda:0')
+                                                               
+Epoch 1/200, Train Loss: 0.0964, Val Loss: 8.4223, Val F1 (weighted): 0.3635, Micro: 0.5267, Macro: 0.2507 (Best Weighted F1 so far: 0.3635)
+                                                               
+Epoch 2/200, Train Loss: 0.0719, Val Loss: 7.4429, Val F1 (weighted): 0.3638, Micro: 0.5269, Macro: 0.3473 (Best Weighted F1 so far: 0.3638)
+                                                               
+Epoch 3/200, Train Loss: 0.0926, Val Loss: 11.6666, Val F1 (weighted): 0.3681, Micro: 0.5290, Macro: 0.3770 (Best Weighted F1 so far: 0.3681)
+                                                               
+Epoch 4/200, Train Loss: 0.0999, Val Loss: 7.1529, Val F1 (weighted): 0.3681, Micro: 0.5290, Macro: 0.3826 (Best Weighted F1 so far: 0.3681)
+                                                               
+Epoch 5/200, Train Loss: 0.1028, Val Loss: 7.1365, Val F1 (weighted): 0.3681, Micro: 0.5290, Macro: 0.2993 (Best Weighted F1 so far: 0.3681)
+                                                               
+Epoch 7/200, Train Loss: 0.0803, Val Loss: 6.5888, Val F1 (weighted): 0.3692, Micro: 0.5294, Macro: 0.2117 (Best Weighted F1 so far: 0.3692)
+                                                               
+Epoch 8/200, Train Loss: 0.0700, Val Loss: 11.3142, Val F1 (weighted): 0.3728, Micro: 0.5316, Macro: 0.3497 (Best Weighted F1 so far: 0.3728)
+                                                               
+Epoch 11/200, Train Loss: 0.0815, Val Loss: 11.0003, Val F1 (weighted): 0.3747, Micro: 0.5328, Macro: 0.3591 (Best Weighted F1 so far: 0.3747)
+                                                               
+Epoch 14/200, Train Loss: 0.1388, Val Loss: 7.5851, Val F1 (weighted): 0.3784, Micro: 0.5351, Macro: 0.4013 (Best Weighted F1 so far: 0.3784)
+                                                               
+Epoch 15/200, Train Loss: 0.0586, Val Loss: 4.3429, Val F1 (weighted): 0.4710, Micro: 0.5801, Macro: 0.4467 (Best Weighted F1 so far: 0.4710)
+                                                               
+Epoch 23/200, Train Loss: 0.0477, Val Loss: 3.4342, Val F1 (weighted): 0.5094, Micro: 0.6030, Macro: 0.5216 (Best Weighted F1 so far: 0.5094)
+                                                               
+Epoch 26/200, Train Loss: 0.0320, Val Loss: 3.9861, Val F1 (weighted): 0.6400, Micro: 0.6841, Macro: 0.5783 (Best Weighted F1 so far: 0.6400)
+                                                               
+Epoch 28/200, Train Loss: 0.0527, Val Loss: 3.0734, Val F1 (weighted): 0.7164, Micro: 0.7403, Macro: 0.5743 (Best Weighted F1 so far: 0.7164)
+                                                               
+Epoch 30/200, Train Loss: 0.0315, Val Loss: 1.7236, Val F1 (weighted): 0.7671, Micro: 0.7817, Macro: 0.6340 (Best Weighted F1 so far: 0.7671)
+                                                               
+Epoch 35/200, Train Loss: 0.0844, Val Loss: 2.4014, Val F1 (weighted): 0.8125, Micro: 0.8211, Macro: 0.6631 (Best Weighted F1 so far: 0.8125)
+                                                              
+Epoch 36/200, Train Loss: 0.0133, Val Loss: 1.7574, Val F1 (weighted): 0.8819, Micro: 0.8852, Macro: 0.6841 (Best Weighted F1 so far: 0.8819)
+                                                               
+Epoch 37/200, Train Loss: 0.0172, Val Loss: 1.8068, Val F1 (weighted): 0.9079, Micro: 0.9099, Macro: 0.7036 (Best Weighted F1 so far: 0.9079)
+                                                               
+Epoch 40/200, Train Loss: 0.0088, Val Loss: 1.7986, Val F1 (weighted): 0.9330, Micro: 0.9341, Macro: 0.7035 (Best Weighted F1 so far: 0.9330)
+
+🛑 Early stopping triggered at epoch 39.
+Fold 3
+Class weights: tensor([3.8121e-01, 4.4458e-01, 1.3703e+03, 7.9017e+00, 6.7127e+03],
+       device='cuda:0')
+                                                               
+Epoch 1/200, Train Loss: 0.0800, Val Loss: 9.5246, Val F1 (weighted): 0.3624, Micro: 0.5258, Macro: 0.4056 (Best Weighted F1 so far: 0.3624)
+                                                               
+Epoch 2/200, Train Loss: 0.1191, Val Loss: 11.1366, Val F1 (weighted): 0.3626, Micro: 0.5259, Macro: 0.4164 (Best Weighted F1 so far: 0.3626)
+                                                               
+Epoch 3/200, Train Loss: 0.1189, Val Loss: 8.8940, Val F1 (weighted): 0.3637, Micro: 0.5264, Macro: 0.3061 (Best Weighted F1 so far: 0.3637)
+                                                              
+Epoch 4/200, Train Loss: 0.0835, Val Loss: 11.0944, Val F1 (weighted): 0.3640, Micro: 0.5265, Macro: 0.4175 (Best Weighted F1 so far: 0.3640)
+                                                               
+Epoch 5/200, Train Loss: 0.0816, Val Loss: 10.4342, Val F1 (weighted): 0.3666, Micro: 0.5278, Macro: 0.3862 (Best Weighted F1 so far: 0.3666)
+                                                               
+Epoch 6/200, Train Loss: 0.0698, Val Loss: 6.8510, Val F1 (weighted): 0.3773, Micro: 0.5331, Macro: 0.4130 (Best Weighted F1 so far: 0.3773)
+                                                               
+Epoch 9/200, Train Loss: 0.0839, Val Loss: 5.0850, Val F1 (weighted): 0.3841, Micro: 0.5388, Macro: 0.3977 (Best Weighted F1 so far: 0.3841)
+                                                               
+Epoch 10/200, Train Loss: 0.0666, Val Loss: 5.0141, Val F1 (weighted): 0.3871, Micro: 0.5418, Macro: 0.4561 (Best Weighted F1 so far: 0.3871)
+                                                               
+Epoch 12/200, Train Loss: 0.0603, Val Loss: 4.2244, Val F1 (weighted): 0.3898, Micro: 0.5442, Macro: 0.5249 (Best Weighted F1 so far: 0.3898)
+                                                               
+Epoch 14/200, Train Loss: 0.0866, Val Loss: 3.6812, Val F1 (weighted): 0.4639, Micro: 0.5801, Macro: 0.4587 (Best Weighted F1 so far: 0.4639)
+                                                               
+Epoch 30/200, Train Loss: 0.1024, Val Loss: 0.6954, Val F1 (weighted): 0.8040, Micro: 0.8116, Macro: 0.5131 (Best Weighted F1 so far: 0.8040)
+                                                               
+Epoch 31/200, Train Loss: 0.0378, Val Loss: 0.8340, Val F1 (weighted): 0.8072, Micro: 0.8154, Macro: 0.5202 (Best Weighted F1 so far: 0.8072)
+                                                               
+Epoch 33/200, Train Loss: 0.1657, Val Loss: 0.3678, Val F1 (weighted): 0.9491, Micro: 0.9493, Macro: 0.7598 (Best Weighted F1 so far: 0.9491)
+                                                               
+Epoch 38/200, Train Loss: 0.0802, Val Loss: 0.2715, Val F1 (weighted): 0.9497, Micro: 0.9500, Macro: 0.7279 (Best Weighted F1 so far: 0.9497)
+                                                               
+Epoch 39/200, Train Loss: 0.0155, Val Loss: 0.1656, Val F1 (weighted): 0.9596, Micro: 0.9598, Macro: 0.7362 (Best Weighted F1 so far: 0.9596)
+                                                               
+Epoch 44/200, Train Loss: 0.0408, Val Loss: 0.2160, Val F1 (weighted): 0.9639, Micro: 0.9643, Macro: 0.7382 (Best Weighted F1 so far: 0.9639)
+                                                               
+Epoch 49/200, Train Loss: 0.0159, Val Loss: 0.0559, Val F1 (weighted): 0.9818, Micro: 0.9819, Macro: 0.7577 (Best Weighted F1 so far: 0.9818)
+                                                               
+Epoch 59/200, Train Loss: 0.0068, Val Loss: 0.0425, Val F1 (weighted): 0.9914, Micro: 0.9914, Macro: 0.7339 (Best Weighted F1 so far: 0.9914)
+                                                               
+Epoch 61/200, Train Loss: 0.0035, Val Loss: 0.0420, Val F1 (weighted): 0.9930, Micro: 0.9930, Macro: 0.7328 (Best Weighted F1 so far: 0.9930)
+                                                               
+Epoch 62/200, Train Loss: 0.0029, Val Loss: 0.0198, Val F1 (weighted): 0.9959, Micro: 0.9959, Macro: 0.7500 (Best Weighted F1 so far: 0.9959)
+                                                               
+Epoch 69/200, Train Loss: 0.0201, Val Loss: 0.0151, Val F1 (weighted): 0.9972, Micro: 0.9972, Macro: 0.7842 (Best Weighted F1 so far: 0.9972)
+                                                               
+Epoch 77/200, Train Loss: 0.0029, Val Loss: 0.0083, Val F1 (weighted): 0.9973, Micro: 0.9973, Macro: 0.7581 (Best Weighted F1 so far: 0.9973)
+                                                               
+Epoch 83/200, Train Loss: 0.0010, Val Loss: 0.0037, Val F1 (weighted): 0.9984, Micro: 0.9983, Macro: 0.7589 (Best Weighted F1 so far: 0.9984)
+                                                               
+Epoch 90/200, Train Loss: 0.0066, Val Loss: 0.0029, Val F1 (weighted): 0.9998, Micro: 0.9998, Macro: 0.7515 (Best Weighted F1 so far: 0.9998)
+                                                               
+Epoch 94/200, Train Loss: 0.0012, Val Loss: 0.0025, Val F1 (weighted): 0.9999, Micro: 0.9998, Macro: 0.7890 (Best Weighted F1 so far: 0.9999)
+                                                               
+Epoch 97/200, Train Loss: 0.0011, Val Loss: 0.0018, Val F1 (weighted): 0.9999, Micro: 0.9999, Macro: 0.7892 (Best Weighted F1 so far: 0.9999)
+                                                               
+
+🛑 Early stopping triggered at epoch 112.
+Average F1 Score for drop_out 0.3, learning rate 0.001, hidden_dim 128: 0.9766
+Testing with learning rate: 0.001, hidden_dim: 128, drop_out: 0.4
+Fold 1
+Class weights: tensor([3.8121e-01, 4.4458e-01, 1.9641e+03, 7.8879e+00, 6.7127e+03],
+       device='cuda:0')
+                                                              
+Epoch 1/200, Train Loss: 0.0725, Val Loss: 7.8303, Val F1 (weighted): 0.3628, Micro: 0.5260, Macro: 0.3504 (Best Weighted F1 so far: 0.3628)
+                                                               
+Epoch 2/200, Train Loss: 0.1021, Val Loss: 9.0508, Val F1 (weighted): 0.3644, Micro: 0.5267, Macro: 0.2950 (Best Weighted F1 so far: 0.3644)
+                                                               
+Epoch 3/200, Train Loss: 0.0895, Val Loss: 7.1913, Val F1 (weighted): 0.3674, Micro: 0.5282, Macro: 0.3493 (Best Weighted F1 so far: 0.3674)
+                                                               
+Epoch 4/200, Train Loss: 0.0968, Val Loss: 5.5726, Val F1 (weighted): 0.3688, Micro: 0.5289, Macro: 0.3959 (Best Weighted F1 so far: 0.3688)
+                                                               
+Epoch 6/200, Train Loss: 0.0867, Val Loss: 13.9469, Val F1 (weighted): 0.3690, Micro: 0.5291, Macro: 0.2830 (Best Weighted F1 so far: 0.3690)
+                                                               
+Epoch 7/200, Train Loss: 0.1008, Val Loss: 7.6943, Val F1 (weighted): 0.3797, Micro: 0.5357, Macro: 0.5300 (Best Weighted F1 so far: 0.3797)
+                                                               
+Epoch 12/200, Train Loss: 0.0596, Val Loss: 4.8548, Val F1 (weighted): 0.3823, Micro: 0.5382, Macro: 0.4121 (Best Weighted F1 so far: 0.3823)
+                                                               
+Epoch 15/200, Train Loss: 0.0640, Val Loss: 3.1411, Val F1 (weighted): 0.3880, Micro: 0.5417, Macro: 0.4674 (Best Weighted F1 so far: 0.3880)
+                                                               
+Epoch 17/200, Train Loss: 0.0436, Val Loss: 2.3934, Val F1 (weighted): 0.4417, Micro: 0.5682, Macro: 0.4715 (Best Weighted F1 so far: 0.4417)
+                                                               
+Epoch 22/200, Train Loss: 0.0540, Val Loss: 5.9991, Val F1 (weighted): 0.5427, Micro: 0.6196, Macro: 0.4302 (Best Weighted F1 so far: 0.5427)
+                                                               
+Epoch 25/200, Train Loss: 0.0283, Val Loss: 1.0581, Val F1 (weighted): 0.7071, Micro: 0.7335, Macro: 0.5891 (Best Weighted F1 so far: 0.7071)
+                                                               
+Epoch 28/200, Train Loss: 0.0256, Val Loss: 0.7611, Val F1 (weighted): 0.8162, Micro: 0.8242, Macro: 0.6792 (Best Weighted F1 so far: 0.8162)
+                                                               
+Epoch 33/200, Train Loss: 0.0153, Val Loss: 0.7217, Val F1 (weighted): 0.8591, Micro: 0.8634, Macro: 0.6564 (Best Weighted F1 so far: 0.8591)
+                                                               
+Epoch 40/200, Train Loss: 0.0308, Val Loss: 0.6799, Val F1 (weighted): 0.8922, Micro: 0.8943, Macro: 0.7402 (Best Weighted F1 so far: 0.8922)
+                                                               
+Epoch 41/200, Train Loss: 0.0166, Val Loss: 0.4141, Val F1 (weighted): 0.9498, Micro: 0.9500, Macro: 0.7648 (Best Weighted F1 so far: 0.9498)
+                                                               
+Epoch 47/200, Train Loss: 0.0344, Val Loss: 0.3830, Val F1 (weighted): 0.9526, Micro: 0.9528, Macro: 0.7561 (Best Weighted F1 so far: 0.9526)
+                                                               
+Epoch 52/200, Train Loss: 0.0359, Val Loss: 0.3599, Val F1 (weighted): 0.9677, Micro: 0.9677, Macro: 0.7652 (Best Weighted F1 so far: 0.9677)
+                                                               
+Epoch 57/200, Train Loss: 0.0029, Val Loss: 0.3215, Val F1 (weighted): 0.9911, Micro: 0.9912, Macro: 0.7679 (Best Weighted F1 so far: 0.9911)
+                                                               
+Epoch 61/200, Train Loss: 0.0048, Val Loss: 0.2836, Val F1 (weighted): 0.9922, Micro: 0.9921, Macro: 0.7765 (Best Weighted F1 so far: 0.9922)
+                                                               
+Epoch 62/200, Train Loss: 0.0024, Val Loss: 0.2962, Val F1 (weighted): 0.9934, Micro: 0.9934, Macro: 0.7812 (Best Weighted F1 so far: 0.9934)
+                                                               
+Epoch 63/200, Train Loss: 0.0020, Val Loss: 0.2940, Val F1 (weighted): 0.9936, Micro: 0.9936, Macro: 0.7767 (Best Weighted F1 so far: 0.9936)
+                                                               
+Epoch 65/200, Train Loss: 0.0027, Val Loss: 0.2582, Val F1 (weighted): 0.9975, Micro: 0.9974, Macro: 0.7836 (Best Weighted F1 so far: 0.9975)
+                                                               
+Epoch 67/200, Train Loss: 0.0015, Val Loss: 0.2597, Val F1 (weighted): 0.9976, Micro: 0.9975, Macro: 0.7848 (Best Weighted F1 so far: 0.9976)
+                                                               
+Epoch 70/200, Train Loss: 0.0464, Val Loss: 0.2922, Val F1 (weighted): 0.9977, Micro: 0.9977, Macro: 0.9739 (Best Weighted F1 so far: 0.9977)
+                                                               
+Epoch 73/200, Train Loss: 0.0022, Val Loss: 0.2717, Val F1 (weighted): 0.9998, Micro: 0.9998, Macro: 0.9760 (Best Weighted F1 so far: 0.9998)
+                                                               
+Epoch 75/200, Train Loss: 0.0012, Val Loss: 0.2724, Val F1 (weighted): 0.9998, Micro: 0.9998, Macro: 0.9830 (Best Weighted F1 so far: 0.9998)
+
+🛑 Early stopping triggered at epoch 74.
+Fold 2
+Class weights: tensor([3.8133e-01, 4.4439e-01, 2.0408e+03, 7.8912e+00, 6.7165e+03],
+       device='cuda:0')
+                                                               
+Epoch 1/200, Train Loss: 0.0989, Val Loss: 8.5779, Val F1 (weighted): 0.3637, Micro: 0.5269, Macro: 0.3449 (Best Weighted F1 so far: 0.3637)
+                                                               
+Epoch 2/200, Train Loss: 0.0877, Val Loss: 8.1178, Val F1 (weighted): 0.3655, Micro: 0.5277, Macro: 0.2446 (Best Weighted F1 so far: 0.3655)
+                                                               
+Epoch 4/200, Train Loss: 0.0984, Val Loss: 9.8003, Val F1 (weighted): 0.3683, Micro: 0.5291, Macro: 0.3872 (Best Weighted F1 so far: 0.3683)
+                                                               
+Epoch 5/200, Train Loss: 0.0791, Val Loss: 11.9740, Val F1 (weighted): 0.3717, Micro: 0.5310, Macro: 0.4309 (Best Weighted F1 so far: 0.3717)
+                                                               
+Epoch 8/200, Train Loss: 0.0902, Val Loss: 8.3113, Val F1 (weighted): 0.3730, Micro: 0.5318, Macro: 0.3556 (Best Weighted F1 so far: 0.3730)
+                                                               
+Epoch 10/200, Train Loss: 0.1236, Val Loss: 3.5983, Val F1 (weighted): 0.5491, Micro: 0.6238, Macro: 0.5295 (Best Weighted F1 so far: 0.5491)
+                                                               
+Epoch 24/200, Train Loss: 0.0734, Val Loss: 2.3890, Val F1 (weighted): 0.8116, Micro: 0.8197, Macro: 0.6623 (Best Weighted F1 so far: 0.8116)
+                                                               
+Epoch 25/200, Train Loss: 0.0266, Val Loss: 3.5343, Val F1 (weighted): 0.8375, Micro: 0.8433, Macro: 0.6905 (Best Weighted F1 so far: 0.8375)
+                                                               
+Epoch 34/200, Train Loss: 0.0331, Val Loss: 3.9227, Val F1 (weighted): 0.8541, Micro: 0.8588, Macro: 0.6908 (Best Weighted F1 so far: 0.8541)
+
+🛑 Early stopping triggered at epoch 33.
+Fold 3
+Class weights: tensor([3.8121e-01, 4.4458e-01, 1.3703e+03, 7.9017e+00, 6.7127e+03],
+       device='cuda:0')
+                                                               
+Epoch 1/200, Train Loss: 0.0740, Val Loss: 7.4259, Val F1 (weighted): 0.3624, Micro: 0.5258, Macro: 0.4079 (Best Weighted F1 so far: 0.3624)
+                                                               
+Epoch 2/200, Train Loss: 0.1106, Val Loss: 7.9148, Val F1 (weighted): 0.3627, Micro: 0.5259, Macro: 0.4094 (Best Weighted F1 so far: 0.3627)
+                                                              
+Epoch 3/200, Train Loss: 0.1002, Val Loss: 13.3753, Val F1 (weighted): 0.3644, Micro: 0.5266, Macro: 0.2776 (Best Weighted F1 so far: 0.3644)
+                                                               
+Epoch 6/200, Train Loss: 0.0506, Val Loss: 7.2185, Val F1 (weighted): 0.3709, Micro: 0.5301, Macro: 0.4694 (Best Weighted F1 so far: 0.3709)
+                                                               
+Epoch 7/200, Train Loss: 0.0941, Val Loss: 6.5058, Val F1 (weighted): 0.3725, Micro: 0.5311, Macro: 0.4605 (Best Weighted F1 so far: 0.3725)
+                                                               
+Epoch 8/200, Train Loss: 0.0672, Val Loss: 9.9955, Val F1 (weighted): 0.3784, Micro: 0.5352, Macro: 0.4049 (Best Weighted F1 so far: 0.3784)
+                                                               
+Epoch 10/200, Train Loss: 0.1017, Val Loss: 9.6225, Val F1 (weighted): 0.3810, Micro: 0.5371, Macro: 0.2905 (Best Weighted F1 so far: 0.3810)
+                                                               
+Epoch 12/200, Train Loss: 0.1147, Val Loss: 4.6009, Val F1 (weighted): 0.5241, Micro: 0.6095, Macro: 0.4546 (Best Weighted F1 so far: 0.5241)
+                                                               
+Epoch 29/200, Train Loss: 0.0489, Val Loss: 1.4898, Val F1 (weighted): 0.5495, Micro: 0.6288, Macro: 0.5611 (Best Weighted F1 so far: 0.5495)
+                                                               
+Epoch 31/200, Train Loss: 0.0436, Val Loss: 2.4289, Val F1 (weighted): 0.6141, Micro: 0.6675, Macro: 0.5728 (Best Weighted F1 so far: 0.6141)
+                                                               
+Epoch 32/200, Train Loss: 0.0485, Val Loss: 1.8740, Val F1 (weighted): 0.7661, Micro: 0.7809, Macro: 0.6442 (Best Weighted F1 so far: 0.7661)
+                                                               
+Epoch 33/200, Train Loss: 0.0265, Val Loss: 1.6126, Val F1 (weighted): 0.8029, Micro: 0.8118, Macro: 0.5223 (Best Weighted F1 so far: 0.8029)
+                                                               
+Epoch 34/200, Train Loss: 0.0387, Val Loss: 1.2900, Val F1 (weighted): 0.8440, Micro: 0.8496, Macro: 0.7054 (Best Weighted F1 so far: 0.8440)
+                                                               
+Epoch 40/200, Train Loss: 0.0260, Val Loss: 0.2606, Val F1 (weighted): 0.9381, Micro: 0.9387, Macro: 0.7369 (Best Weighted F1 so far: 0.9381)
+                                                               
+Epoch 43/200, Train Loss: 0.0124, Val Loss: 0.3140, Val F1 (weighted): 0.9424, Micro: 0.9429, Macro: 0.7530 (Best Weighted F1 so far: 0.9424)
+                                                               
+Epoch 48/200, Train Loss: 0.0422, Val Loss: 0.1129, Val F1 (weighted): 0.9575, Micro: 0.9577, Macro: 0.6911 (Best Weighted F1 so far: 0.9575)
+                                                               
+Epoch 51/200, Train Loss: 0.0064, Val Loss: 0.1201, Val F1 (weighted): 0.9647, Micro: 0.9649, Macro: 0.7129 (Best Weighted F1 so far: 0.9647)
+                                                               
+Epoch 53/200, Train Loss: 0.0185, Val Loss: 0.0568, Val F1 (weighted): 0.9924, Micro: 0.9924, Macro: 0.7695 (Best Weighted F1 so far: 0.9924)
+                                                               
+Epoch 59/200, Train Loss: 0.0121, Val Loss: 0.0087, Val F1 (weighted): 0.9951, Micro: 0.9950, Macro: 0.7439 (Best Weighted F1 so far: 0.9951)
+                                                               
+Epoch 60/200, Train Loss: 0.0026, Val Loss: 0.0050, Val F1 (weighted): 0.9997, Micro: 0.9996, Macro: 0.7697 (Best Weighted F1 so far: 0.9997)
+                                                               
+Epoch 69/200, Train Loss: 0.0018, Val Loss: 0.0029, Val F1 (weighted): 0.9999, Micro: 0.9999, Macro: 0.7794 (Best Weighted F1 so far: 0.9999)
+                                                               
+Epoch 83/200, Train Loss: 0.0019, Val Loss: 0.0022, Val F1 (weighted): 0.9999, Micro: 0.9999, Macro: 0.7794 (Best Weighted F1 so far: 0.9999)
+                                                               
+Epoch 85/200, Train Loss: 0.0013, Val Loss: 0.0016, Val F1 (weighted): 1.0000, Micro: 0.9999, Macro: 0.7796 (Best Weighted F1 so far: 1.0000)
+                                                               
+
+🛑 Early stopping triggered at epoch 94.
+Average F1 Score for drop_out 0.4, learning rate 0.001, hidden_dim 128: 0.9513
+Testing with learning rate: 0.001, hidden_dim: 256, drop_out: 0.2
+Fold 1
+Class weights: tensor([3.8121e-01, 4.4458e-01, 1.9641e+03, 7.8879e+00, 6.7127e+03],
+       device='cuda:0')
+                                                              
+Epoch 1/200, Train Loss: 0.0746, Val Loss: 10.1395, Val F1 (weighted): 0.3628, Micro: 0.5260, Macro: 0.3490 (Best Weighted F1 so far: 0.3628)
+                                                              
+Epoch 2/200, Train Loss: 0.1109, Val Loss: 10.3683, Val F1 (weighted): 0.3676, Micro: 0.5283, Macro: 0.3908 (Best Weighted F1 so far: 0.3676)
+                                                              
+Epoch 4/200, Train Loss: 0.1143, Val Loss: 9.2022, Val F1 (weighted): 0.3678, Micro: 0.5284, Macro: 0.3418 (Best Weighted F1 so far: 0.3678)
+                                                              
+Epoch 6/200, Train Loss: 0.1895, Val Loss: 12.8389, Val F1 (weighted): 0.3682, Micro: 0.5286, Macro: 0.4072 (Best Weighted F1 so far: 0.3682)
+                                                              
+Epoch 8/200, Train Loss: 0.1527, Val Loss: 35.6165, Val F1 (weighted): 0.3685, Micro: 0.5285, Macro: 0.2729 (Best Weighted F1 so far: 0.3685)
+                                                              
+Epoch 9/200, Train Loss: 0.1773, Val Loss: 11.8581, Val F1 (weighted): 0.3690, Micro: 0.5291, Macro: 0.3379 (Best Weighted F1 so far: 0.3690)
+                                                              
+Epoch 10/200, Train Loss: 0.0794, Val Loss: 8.9217, Val F1 (weighted): 0.3732, Micro: 0.5315, Macro: 0.4554 (Best Weighted F1 so far: 0.3732)
+                                                              
+Epoch 15/200, Train Loss: 0.1574, Val Loss: 6.3948, Val F1 (weighted): 0.3826, Micro: 0.5385, Macro: 0.4227 (Best Weighted F1 so far: 0.3826)
+                                                              
+Epoch 17/200, Train Loss: 0.0668, Val Loss: 5.1803, Val F1 (weighted): 0.3943, Micro: 0.5416, Macro: 0.3483 (Best Weighted F1 so far: 0.3943)
+                                                              
+Epoch 22/200, Train Loss: 0.1196, Val Loss: 4.6802, Val F1 (weighted): 0.4229, Micro: 0.5574, Macro: 0.4785 (Best Weighted F1 so far: 0.4229)
+                                                              
+Epoch 28/200, Train Loss: 0.1300, Val Loss: 2.2353, Val F1 (weighted): 0.6998, Micro: 0.7270, Macro: 0.5856 (Best Weighted F1 so far: 0.6998)
+                                                              
+
+🛑 Early stopping triggered at epoch 37.
+Fold 2
+Class weights: tensor([3.8133e-01, 4.4439e-01, 2.0408e+03, 7.8912e+00, 6.7165e+03],
+       device='cuda:0')
+                                                              
+Epoch 1/200, Train Loss: 0.0782, Val Loss: 7.8201, Val F1 (weighted): 0.3638, Micro: 0.5269, Macro: 0.3407 (Best Weighted F1 so far: 0.3638)
+                                                              
+Epoch 3/200, Train Loss: 0.1177, Val Loss: 11.6657, Val F1 (weighted): 0.3681, Micro: 0.5290, Macro: 0.3726 (Best Weighted F1 so far: 0.3681)
+                                                              
+Epoch 4/200, Train Loss: 0.0871, Val Loss: 5.9098, Val F1 (weighted): 0.3697, Micro: 0.5298, Macro: 0.2865 (Best Weighted F1 so far: 0.3697)
+                                                              
+Epoch 7/200, Train Loss: 0.1633, Val Loss: 11.7766, Val F1 (weighted): 0.3710, Micro: 0.5306, Macro: 0.4221 (Best Weighted F1 so far: 0.3710)
+                                                              
+Epoch 11/200, Train Loss: 0.1001, Val Loss: 12.1059, Val F1 (weighted): 0.3771, Micro: 0.5343, Macro: 0.3693 (Best Weighted F1 so far: 0.3771)
+                                                              
+Epoch 13/200, Train Loss: 0.0541, Val Loss: 7.2757, Val F1 (weighted): 0.3832, Micro: 0.5373, Macro: 0.3668 (Best Weighted F1 so far: 0.3832)
+                                                              
+
+🛑 Early stopping triggered at epoch 13.
+Fold 3
+Class weights: tensor([3.8121e-01, 4.4458e-01, 1.3703e+03, 7.9017e+00, 6.7127e+03],
+       device='cuda:0')
+                                                              
+Epoch 1/200, Train Loss: 0.0764, Val Loss: 8.2221, Val F1 (weighted): 0.3624, Micro: 0.5258, Macro: 0.4006 (Best Weighted F1 so far: 0.3624)
+                                                              
+Epoch 2/200, Train Loss: 0.0939, Val Loss: 7.2798, Val F1 (weighted): 0.3624, Micro: 0.5258, Macro: 0.4010 (Best Weighted F1 so far: 0.3624)
+                                                              
+Epoch 3/200, Train Loss: 0.1422, Val Loss: 9.6025, Val F1 (weighted): 0.3628, Micro: 0.5260, Macro: 0.4081 (Best Weighted F1 so far: 0.3628)
+                                                              
+Epoch 4/200, Train Loss: 0.1361, Val Loss: 7.4962, Val F1 (weighted): 0.3634, Micro: 0.5262, Macro: 0.3166 (Best Weighted F1 so far: 0.3634)
+                                                              
+Epoch 5/200, Train Loss: 0.1854, Val Loss: 10.9752, Val F1 (weighted): 0.3651, Micro: 0.5271, Macro: 0.3086 (Best Weighted F1 so far: 0.3651)
+                                                              
+Epoch 6/200, Train Loss: 0.1115, Val Loss: 14.6118, Val F1 (weighted): 0.3721, Micro: 0.5309, Macro: 0.4882 (Best Weighted F1 so far: 0.3721)
+                                                              
+Epoch 9/200, Train Loss: 0.0712, Val Loss: 5.6908, Val F1 (weighted): 0.3754, Micro: 0.5330, Macro: 0.3978 (Best Weighted F1 so far: 0.3754)
+                                                              
+Epoch 10/200, Train Loss: 0.1069, Val Loss: 4.9608, Val F1 (weighted): 0.4889, Micro: 0.5899, Macro: 0.4930 (Best Weighted F1 so far: 0.4889)
+                                                              
+Epoch 19/200, Train Loss: 0.0736, Val Loss: 2.1771, Val F1 (weighted): 0.5572, Micro: 0.6317, Macro: 0.5652 (Best Weighted F1 so far: 0.5572)
+                                                              
+Epoch 24/200, Train Loss: 0.0726, Val Loss: 1.5927, Val F1 (weighted): 0.5945, Micro: 0.6564, Macro: 0.5929 (Best Weighted F1 so far: 0.5945)
+                                                              
+Epoch 26/200, Train Loss: 0.0265, Val Loss: 1.1032, Val F1 (weighted): 0.6066, Micro: 0.6631, Macro: 0.4390 (Best Weighted F1 so far: 0.6066)
+                                                              
+Epoch 29/200, Train Loss: 0.0261, Val Loss: 1.7609, Val F1 (weighted): 0.6124, Micro: 0.6678, Macro: 0.6011 (Best Weighted F1 so far: 0.6124)
+                                                              
+Epoch 32/200, Train Loss: 0.0270, Val Loss: 1.0511, Val F1 (weighted): 0.7153, Micro: 0.7401, Macro: 0.6143 (Best Weighted F1 so far: 0.7153)
+                                                              
+Epoch 38/200, Train Loss: 0.0194, Val Loss: 1.1647, Val F1 (weighted): 0.8193, Micro: 0.8266, Macro: 0.6727 (Best Weighted F1 so far: 0.8193)
+                                                              
+Epoch 40/200, Train Loss: 0.0167, Val Loss: 0.5026, Val F1 (weighted): 0.9138, Micro: 0.9150, Macro: 0.6955 (Best Weighted F1 so far: 0.9138)
+                                                              
+Epoch 46/200, Train Loss: 0.0127, Val Loss: 0.2805, Val F1 (weighted): 0.9233, Micro: 0.9242, Macro: 0.7324 (Best Weighted F1 so far: 0.9233)
+                                                              
+Epoch 47/200, Train Loss: 0.0078, Val Loss: 0.1577, Val F1 (weighted): 0.9584, Micro: 0.9586, Macro: 0.7616 (Best Weighted F1 so far: 0.9584)
+                                                              
+Epoch 49/200, Train Loss: 0.0086, Val Loss: 0.1222, Val F1 (weighted): 0.9614, Micro: 0.9617, Macro: 0.7341 (Best Weighted F1 so far: 0.9614)
+                                                              
+Epoch 52/200, Train Loss: 0.0110, Val Loss: 0.1613, Val F1 (weighted): 0.9657, Micro: 0.9657, Macro: 0.7148 (Best Weighted F1 so far: 0.9657)
+                                                              
+Epoch 56/200, Train Loss: 0.0518, Val Loss: 0.0312, Val F1 (weighted): 0.9922, Micro: 0.9922, Macro: 0.7355 (Best Weighted F1 so far: 0.9922)
+                                                              
+Epoch 57/200, Train Loss: 0.0040, Val Loss: 0.0143, Val F1 (weighted): 0.9969, Micro: 0.9969, Macro: 0.7310 (Best Weighted F1 so far: 0.9969)
+                                                              
+Epoch 58/200, Train Loss: 0.0212, Val Loss: 0.0176, Val F1 (weighted): 0.9970, Micro: 0.9970, Macro: 0.7312 (Best Weighted F1 so far: 0.9970)
+                                                              
+Epoch 59/200, Train Loss: 0.0024, Val Loss: 0.0174, Val F1 (weighted): 0.9970, Micro: 0.9970, Macro: 0.7805 (Best Weighted F1 so far: 0.9970)
+                                                              
+Epoch 62/200, Train Loss: 0.0029, Val Loss: 0.0094, Val F1 (weighted): 0.9972, Micro: 0.9971, Macro: 0.7490 (Best Weighted F1 so far: 0.9972)
+                                                              
+Epoch 63/200, Train Loss: 0.0017, Val Loss: 0.0074, Val F1 (weighted): 0.9972, Micro: 0.9972, Macro: 0.7728 (Best Weighted F1 so far: 0.9972)
+                                                              
