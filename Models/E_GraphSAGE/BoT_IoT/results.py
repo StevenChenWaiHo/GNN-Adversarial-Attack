@@ -1,6 +1,49 @@
 report = {
     # Host
     'host': {
+        2000: {
+            'DDoS': {
+                'influence': (0.0, 0.08, 2000.0),
+                'out_degree': (1.0, 551.02, 2000.0),
+                'in_degree': (1.0, 1883.54, 2000.0),
+                'normal_f1': 1.0,
+                'to_both_f1': 0.7,
+                'to_src_f1': 0.7,
+                'to_dst_f1': 1.0,
+                'edge_perturb_f1': 0.99,
+                'random_edge_f1': 0.7
+            },
+            'DoS': {
+                'influence': (0.0, 0.28, 2000.0),
+                'out_degree': (1.0, 558.15, 2000.0),
+                'in_degree': (1.0, 558.15, 2000.0),
+                'normal_f1': 1.0,
+                'to_both_f1': 0.05,
+                'to_src_f1': 0.06,
+                'to_dst_f1': 0.99,
+                'edge_perturb_f1': 0.99,
+                'random_edge_f1': 0.01
+            },
+            'Reconnaissance': {
+                'influence': (0.0, 0.13, 614.94),
+                'out_degree': (1.0, 387.03, 1109.0),
+                'in_degree': (1.0, 557.32, 1992.0),
+                'normal_f1': 0.98,
+                'to_both_f1': 0.72,
+                'to_src_f1': 0.7,
+                'to_dst_f1': 0.98,
+                'edge_perturb_f1': 0.94,
+                'random_edge_f1': 0.67
+            },
+            'Weighted Average': {
+                'normal_f1': 1.0,
+                'to_both_f1': 0.41,
+                'to_src_f1': 0.41,
+                'to_dst_f1': 0.99,
+                'edge_perturb_f1': 0.99,
+                'random_edge_f1': 0.39
+            }
+        },
         1500: { # DONE
             "DDoS": {
                 "out_degree": (1, 412.98, 1500),
