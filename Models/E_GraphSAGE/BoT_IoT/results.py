@@ -1,5 +1,4 @@
 report = {
-    # Host
     'host': {
         2000: {
             'DDoS': {
@@ -44,7 +43,7 @@ report = {
                 'random_edge_f1': 0.39
             }
         },
-        1500: { # DONE
+        1500: {
             "DDoS": {
                 "out_degree": (1, 412.98, 1500),
                 "in_degree": (1, 1419.12, 1500),
@@ -88,7 +87,7 @@ report = {
                 "random_edge_f1": 0.81
             }
         },
-        1000: { # DONE
+        1000: {
             "DDoS": {
                 "out_degree": (1, 286.84, 1000),
                 "in_degree": (1, 970.90, 1000),
@@ -132,7 +131,7 @@ report = {
                 "random_edge_f1": 0.41   
             }
         },
-        500: { # DONE
+        500: {
             "DDoS": {
                 "out_degree": (1, 168.02, 500),
                 "in_degree": (1, 483.28, 500),
@@ -178,7 +177,49 @@ report = {
         },
     },
     'endpoint': {
-        1500: { # DONE
+        2000: {
+            'DDoS': {
+                'influence': (0.0, 0.0, 28.32),
+                'out_degree': (1.0, 1.0, 238.0),
+                'in_degree': (1.0, 558.49, 2000.0),
+                'normal_f1': 0.99,
+                'to_both_f1': 0.97,
+                'to_src_f1': 0.94,
+                'to_dst_f1': 0.99,
+                'edge_perturb_f1': 0.99,
+                'random_edge_f1': 0.94
+            },
+            'DoS': {
+                'influence': (0.0, 0.0, 0.0),
+                'out_degree': (1.0, 1.0, 2.0),
+                'in_degree': (1.0, 550.71, 2000.0),
+                'normal_f1': 0.99,
+                'to_both_f1': 0.95,
+                'to_src_f1': 0.9,
+                'to_dst_f1': 0.99,
+                'edge_perturb_f1': 0.99,
+                'random_edge_f1': 0.9
+            },
+            'Reconnaissance': {
+                'influence': (0.0, 0.01, 525.31),
+                'out_degree': (1.0, 6.0, 1025.0),
+                'in_degree': (1.0, 1.81, 59.0),
+                'normal_f1': 0.96,
+                'to_both_f1': 0.83,
+                'to_src_f1': 0.87,
+                'to_dst_f1': 0.87,
+                'edge_perturb_f1': 0.75,
+                'random_edge_f1': 0.84
+            },
+            'Weighted Average': {
+                'normal_f1': 0.99,
+                'to_both_f1': 0.96,
+                'to_src_f1': 0.92,
+                'to_dst_f1': 0.99,
+                'edge_perturb_f1': 0.99,
+                'random_edge_f1': 0.92
+            }},
+        1500: {
             "DDoS": {
                 "out_degree": (1, 1.00, 197),
                 "in_degree": (1, 363, 1500),
@@ -223,7 +264,7 @@ report = {
                 "random_edge_f1": 0.96
             }
         },
-        1000: { # DONE
+        1000: {
            "DDoS": {
                 "out_degree": (1, 1.00, 119),
                 "in_degree": (1, 688.84, 1000),
@@ -267,7 +308,7 @@ report = {
                 "random_edge_f1": 0.95
             }
         },
-        500: { # DONE
+        500: {
             'DDoS': {
                 'influence': (0.0, 0.0, 28.32),
                 'out_degree': (1.0, 1.0, 119.0),
